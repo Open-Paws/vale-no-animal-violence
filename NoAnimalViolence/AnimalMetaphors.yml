@@ -1,0 +1,35 @@
+# AUTO-GENERATED from project-compassionate-code. Do not edit directly.
+extends: substitution
+message: Consider using '%s' instead of '%s'. This term references animals as objects or tools.
+link: https://doi.org/10.1007/s43681-023-00380-w
+level: warning
+ignorecase: true
+swap:
+  cattle vs. pets: ephemeral vs. persistent
+  pet project: side project
+  canary in a coal mine: early warning signal
+  dogfooding: self-hosting
+  herding cats: coordinating independent contributors
+  go on a fishing expedition: exploratory investigation
+  sacred cow: unquestioned belief
+  sacred cows: unquestioned beliefs
+  scapegoat: blame target
+  scapegoated: wrongly blamed
+  scapegoating: wrongly blaming
+  scapegoats: blame targets
+  rat race: daily grind
+  dead cat bounce: temporary rebound
+  dog-eat-dog: ruthlessly competitive
+  whack-a-mole: recurring problem
+  cash cow: profit center
+  cash cows: profit centers
+  sacrificial lamb: expendable person
+  sacrificial lambs: expendable persons
+  sitting duck: easy target
+  sitting ducks: easy targets
+  open season: free-for-all
+  opening season: free-for-all
+  opened season: free-for-all
+  put out to pasture: retire
+  dead duck: lost cause
+  dead ducks: lost causes

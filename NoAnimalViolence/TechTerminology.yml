@@ -1,0 +1,10 @@
+# AUTO-GENERATED from project-compassionate-code. Do not edit directly.
+extends: substitution
+message: Consider using '%s' instead of '%s'. This technical term has a more precise alternative.
+link: https://doi.org/10.1007/s43681-023-00380-w
+level: suggestion
+ignorecase: true
+swap:
+  master/slave: primary/replica
+  whitelist/blacklist: allowlist/denylist
+  grandfathered: legacy

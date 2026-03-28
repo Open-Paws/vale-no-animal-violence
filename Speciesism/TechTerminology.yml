@@ -1,0 +1,19 @@
+extends: substitution
+message: "Consider using '%s' instead of '%s'. This technical term has a more precise alternative."
+level: suggestion
+ignorecase: true
+swap:
+  'cattle vs\.? pets': ephemeral vs. persistent
+  'cattle versus pets': ephemeral vs. persistent
+  'cattle not pets': ephemeral vs. persistent
+  'canary deployment': progressive rollout
+  'canary release': progressive rollout
+  'canary test(?:ing)?': incremental testing
+  'stack canary': sentinel value
+  'canary value': sentinel value
+  'canary word': sentinel value
+  'monkey[- ]?patch(?:ed|ing)?': runtime patch
+  'duck[- ]?typ(?:ed|ing)': structural typing
+  'dogfood(?:ing)?': self-hosting
+  'eat(?:ing)? (?:your|our|their) own dogfood': self-testing
+  'rubber duck(?:ing)? debugging': talk-through debugging

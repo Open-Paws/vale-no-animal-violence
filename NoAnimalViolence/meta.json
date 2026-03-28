@@ -1,0 +1,6 @@
+{
+  "name": "NoAnimalViolence",
+  "description": "Vale rules for detecting language that normalizes violence toward animals",
+  "homepage": "https://github.com/Open-Paws/vale-no-animal-violence",
+  "source": "https://github.com/Open-Paws/project-compassionate-code"
+}
