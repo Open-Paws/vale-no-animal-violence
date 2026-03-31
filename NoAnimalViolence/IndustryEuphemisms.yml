@@ -1,0 +1,31 @@
+extends: substitution
+message: "Consider using '%s' instead of '%s'. This is an industry euphemism that sanitizes animal agriculture practices."
+link: https://github.com/open-paws/common-crawl-audit
+level: warning
+ignorecase: true
+swap:
+  'livestock': farmed animals
+  'poultry': farmed birds
+  'gestation crate': pregnancy cage
+  'gestation crates': pregnancy cages
+  'depopulation': mass killing
+  'depopulated': mass killed
+  'depopulating': mass killing
+  'processing plant': slaughterhouse
+  'processing plants': slaughterhouses
+  'processing facility': slaughterhouse
+  'processing facilities': slaughterhouses
+  'farrowing crate': birthing cage
+  'farrowing crates': birthing cages
+  'battery cage': small wire cage
+  'battery cages': small wire cages
+  'confined cage': small wire cage
+  'confined cages': small wire cages
+  'spent hen': discarded hen
+  'spent hens': discarded hens
+  'humane slaughter': slaughter
+  'humanely slaughtered': slaughtered
+  'humane killing': killing
+  'humanely killed': killed
+  'broiler': chicken raised for meat
+  'broilers': chickens raised for meat
