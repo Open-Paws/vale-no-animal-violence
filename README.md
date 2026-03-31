@@ -23,6 +23,7 @@ vale sync
 | `NoAnimalViolence.AnimalIdioms` | warning | Violent animal idioms with professional alternatives |
 | `NoAnimalViolence.AnimalMetaphors` | warning | Animal-as-object metaphors with clearer alternatives |
 | `NoAnimalViolence.TechTerminology` | suggestion | Technical terms with more precise alternatives |
+| `NoAnimalViolence.IndustryEuphemisms` | warning | Industry euphemisms that sanitize animal agriculture practices |
 
 ## Configuration
 
