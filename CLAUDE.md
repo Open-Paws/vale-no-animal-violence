@@ -106,3 +106,16 @@ zip -r NoAnimalViolence.zip NoAnimalViolence/
 ### Structured Coding Reference
 
 For tool-specific AI coding instructions (Claude Code rules, Cursor MDC, Copilot, Windsurf, etc.), copy the corresponding directory from `structured-coding-with-ai` into this project root.
+
+## MCP Integrations (live 2026-04-09)
+
+The broader NAV suite this package belongs to now has live MCP infrastructure:
+
+- **mcp-server-nav-language** — Pure regex MCP server (sub-10ms) covering the same pattern space as the Vale rules but for real-time agent use. This Vale package handles prose linting at write time; the MCP server handles runtime enforcement across the agent swarm via Gary MCP hub Phase 3.
+- **lbr8-mcp-constraints** — Bundles 12 offline NAV patterns from this suite as `StaticConstraintSource` middleware for any MCP tool handler.
+- **mcp-server-aha-evaluation** — Uses NAV rules as Stage 1 of a two-stage content evaluation pipeline.
+- **Audit-to-dispatch (decision #37, 2026-04-11)** — NAV violations found during ecosystem audits now auto-dispatch as agent fix tasks.
+
+## Decisions Reviewed
+
+Last reviewed: 2026-04-11 (decisions #37 audit-to-dispatch, mcp-server-nav-language live)
