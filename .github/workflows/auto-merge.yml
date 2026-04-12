@@ -1,21 +1,179 @@
-name: Auto Merge
+# Auto-Merge Workflow Template — Wave -1 Item A2
+# Deploy to: .github/workflows/auto-merge.yml in each target repo
+#
+# PURPOSE:
+#   Automatically squash-merges Level 0 PRs once all quality gates have passed.
+#   Works in tandem with the PR gates workflow (roadmap/auto-merge-workflow.yml),
+#   which runs the gate checks and manages labels. This workflow acts on those labels.
+#
+# LABEL CONTRACT (all four must be created org-wide before deploying — see wave-minus1-checklist.md):
+#   level-0            — PR is purely additive/cleanup; no external state changed
+#   gates-passed       — All gate checks passed (CI, desloppify, NAV, validation agent)
+#   needs-human-review — Genuine escalation; auto-merge permanently blocked for this PR
+#   auto-merge         — Legacy compatibility alias; treated as equivalent to gates-passed
+#
+# MERGE CONDITION — all of the following must be true:
+#   1. PR has 'level-0' label
+#   2. PR has 'gates-passed' label (or 'auto-merge' alias)
+#   3. PR does NOT have 'needs-human-review' label
+#   4. PR does NOT have 'human-gate' label
+#   5. PR is not a draft
+#
+# REPO-SPECIFIC THRESHOLDS (set via repo variable DESLOPPIFY_THRESHOLD — gates workflow uses this):
+#   Gary:                   80  (set DESLOPPIFY_THRESHOLD=80)
+#   Platform/API gateway:   75  (set DESLOPPIFY_THRESHOLD=75)
+#   All other repos:        70  (default — no override needed)
+#
+# REQUIRED PERMISSIONS:
+#   This workflow uses GITHUB_TOKEN only — no PAT required.
+#   GitHub repo setting must allow: "Allow auto-merge" (Settings → General → Pull Requests).
+#
+# DEPLOYMENT:
+#   Copy this file to .github/workflows/auto-merge.yml in each target repo.
+#   No substitutions required — all repo-specific values come from repo variables.
+
+name: Auto-Merge Level 0 PRs
 
 on:
   pull_request:
-    types: [labeled]
-  pull_request_target:
-    types: [labeled]
+    types: [opened, synchronize, labeled]
+  pull_request_review:
+    types: [submitted]
 
 permissions:
   pull-requests: write
   contents: write
 
 jobs:
-  auto-merge:
-    if: contains(github.event.pull_request.labels.*.name, 'auto-merge')
+  check-auto-merge:
+    name: Check Auto-Merge Eligibility
     runs-on: ubuntu-latest
+
+    # Skip entirely for draft PRs
+    if: github.event.pull_request.draft == false
+
     steps:
-      - name: Enable auto-merge
-        run: gh pr merge "${{ github.event.pull_request.html_url }}" --auto --squash
+      - name: Evaluate labels and enable auto-merge if eligible
+        id: evaluate
+        uses: actions/github-script@v7
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumber = context.payload.pull_request?.number;
+            if (!prNumber) {
+              core.info('No PR number found in event payload — skipping.');
+              return;
+            }
+
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            const labels = pr.labels.map(l => l.name);
+            core.info(`PR #${prNumber} labels: ${labels.join(', ') || '(none)'}`);
+
+            // ── Blocking conditions (check first — fast exit) ──────────────
+            const hasHumanGate     = labels.includes('human-gate');
+            const hasNeedsHuman    = labels.includes('needs-human-review');
+            const hasLevel0        = labels.includes('level-0');
+            const hasGatesPassed   = labels.includes('gates-passed') || labels.includes('auto-merge');
+
+            if (hasHumanGate) {
+              core.info('PR has human-gate label — auto-merge permanently disabled for this PR. No action taken.');
+              core.setOutput('action', 'blocked-human-gate');
+              return;
+            }
+
+            if (hasNeedsHuman) {
+              core.setOutput('action', 'blocked-needs-human-review');
+              await postComment(github, context, prNumber,
+                '**Auto-merge not enabled.**\n\n' +
+                'This PR has the `needs-human-review` label. A human reviewer must approve and merge it.\n\n' +
+                '> To re-enable auto-merge: remove `needs-human-review` after addressing the escalation reason, ' +
+                'ensure `level-0` and `gates-passed` labels are present, then push a new commit.'
+              );
+              return;
+            }
+
+            if (!hasLevel0) {
+              core.setOutput('action', 'skipped-not-level-0');
+              core.info('PR does not have level-0 label — auto-merge not applicable. Skipping.');
+              // No comment — Level 1/2 PRs get different handling; a comment here would be noise.
+              return;
+            }
+
+            if (!hasGatesPassed) {
+              core.setOutput('action', 'waiting-gates');
+              core.info('PR has level-0 but gates-passed label is not yet set. Waiting for gate checks to complete.');
+              // No comment — the gates workflow posts its own failure comments; duplicating here is noise.
+              return;
+            }
+
+            // ── All conditions met — enable auto-merge ─────────────────────
+            core.setOutput('action', 'auto-merge-enabled');
+
+            try {
+              // gh pr merge --auto --squash sets GitHub's native auto-merge flag.
+              // GitHub merges the PR automatically once all required status checks pass.
+              const { execSync } = require('child_process');
+              execSync(
+                `gh pr merge ${prNumber} --auto --squash --repo ${context.repo.owner}/${context.repo.repo}`,
+                { env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN } }
+              );
+              core.info(`Auto-merge enabled for PR #${prNumber} via gh pr merge --auto --squash`);
+            } catch (err) {
+              // Auto-merge may already be set, or the PR may already be mergeable — log and continue.
+              core.warning(`gh pr merge returned non-zero: ${err.message}`);
+            }
+
+            await postComment(github, context, prNumber,
+              '**Auto-merge enabled.**\n\n' +
+              'This PR meets all Level 0 auto-merge conditions:\n\n' +
+              '| Condition | Status |\n' +
+              '|-----------|--------|\n' +
+              '| `level-0` label | present |\n' +
+              '| `gates-passed` label | present |\n' +
+              '| `needs-human-review` label | absent |\n' +
+              '| `human-gate` label | absent |\n' +
+              '| Draft | no |\n\n' +
+              'The PR will be squash-merged automatically once all required status checks pass.\n\n' +
+              '> To cancel auto-merge: add `needs-human-review` or `human-gate` label, or use the GitHub UI to disable auto-merge on this PR.'
+            );
+
+            // ── Helpers ────────────────────────────────────────────────────
+            async function postComment(github, context, prNumber, body) {
+              // Deduplicate: skip if the bot already posted the same state comment.
+              const { data: comments } = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                per_page: 30,
+              });
+
+              const markerPhrase = body.startsWith('**Auto-merge enabled')
+                ? 'Auto-merge enabled.'
+                : body.startsWith('**Auto-merge not enabled')
+                  ? 'Auto-merge not enabled.'
+                  : null;
+
+              if (markerPhrase) {
+                const alreadyPosted = comments.some(c =>
+                  c.user?.type === 'Bot' && c.body?.includes(markerPhrase)
+                );
+                if (alreadyPosted) {
+                  core.info(`Deduplication: skipping comment — "${markerPhrase}" already posted.`);
+                  return;
+                }
+              }
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: `${body}\n\n*Auto-Merge Check — ${new Date().toISOString()}*`,
+              });
+            }
