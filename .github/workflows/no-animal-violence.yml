@@ -1,0 +1,11 @@
+name: No Animal Violence Check
+on: [pull_request]
+jobs:
+  nav-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Open-Paws/no-animal-violence-action@v1
+        with:
+          fail_on_error: true
+          fail_on_warning: false

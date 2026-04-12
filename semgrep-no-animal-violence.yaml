@@ -1,0 +1,4 @@
+rules:
+  - id: no-animal-violence-import
+    pattern-not-regex: .*
+    import-from: https://github.com/Open-Paws/semgrep-rules-no-animal-violence
