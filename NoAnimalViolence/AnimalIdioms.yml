@@ -135,4 +135,6 @@ swap:
   'master/slave': 'primary/replica'
   'whitelist/blacklist': 'allowlist/denylist'
   'grandfathered': 'legacy'
+  'lame duck': 'outgoing'
+  'lame-duck': 'outgoing'
   'veal': 'calf flesh'
