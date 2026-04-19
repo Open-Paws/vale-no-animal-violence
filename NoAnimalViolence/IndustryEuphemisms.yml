@@ -1,35 +1,202 @@
 # AUTO-GENERATED from Open-Paws/no-animal-violence. Do not edit directly.
 extends: substitution
-message: "Consider using '%s' instead of '%s'. This phrase normalizes violence toward animals."
-link: https://doi.org/10.1007/s43681-023-00380-w
+message: "Consider using '%s' instead of '%s'. This phrase normalizes violence toward animals (see rule comment for why)."
 level: warning
 ignorecase: true
 swap:
+  # livestock: Commodity framing that groups sentient beings as 'stock.' 'Farmed animals' keeps the meaning without the commodity framing.
   'livestock': 'farmed animals'
+  # poultry: Commodity framing for farmed birds. 'Farmed birds' or the specific species keeps the meaning without the commodity framing.
   'poultry': 'farmed birds'
+  # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
   'gestation crate': 'pregnancy cage'
+  # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
   'gestation crates': 'pregnancy cage'
-  'depopulation': 'mass killing'
-  'depopulated': 'mass killing'
-  'depopulating': 'mass killing'
-  'processing plant': 'slaughterhouse'
-  'processing plants': 'slaughterhouse'
-  'processing facility': 'slaughterhouse'
-  'processing facilities': 'slaughterhouse'
-  'farrowing crate': 'birthing cage'
-  'farrowing crates': 'birthing cage'
-  'battery cage': 'small wire cage'
-  'battery cages': 'small wire cage'
-  'spent hen': 'discarded hen'
-  'spent hens': 'discarded hen'
-  'humane slaughter': 'slaughter'
-  'humanely slaughter': 'slaughter'
-  'humane slaughtered': 'slaughter'
-  'humanely slaughtered': 'slaughter'
-  'humane killing': 'slaughter'
-  'humanely killing': 'slaughter'
-  'humane killed': 'slaughter'
-  'humanely killed': 'slaughter'
-  'broiler': 'chicken raised for meat'
-  'broilers': 'chicken raised for meat'
-  'veal': 'calf flesh'
+  # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
+  'gestation-crate': 'pregnancy cage'
+  # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
+  'gestation-crates': 'pregnancy cage'
+  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
+  'farrowing crate': 'piglet protection cage'
+  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
+  'farrowing crates': 'piglet protection cage'
+  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
+  'farrowing-crate': 'piglet protection cage'
+  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
+  'farrowing-crates': 'piglet protection cage'
+  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
+  'battery cage': 'egg production cage'
+  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
+  'battery cages': 'egg production cage'
+  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
+  'battery-cage': 'egg production cage'
+  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
+  'battery-cages': 'egg production cage'
+  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
+  'forced molting': 'induced molt through starvation'
+  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
+  'forced-molting': 'induced molt through starvation'
+  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
+  'force molting': 'induced molt through starvation'
+  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
+  'force-molting': 'induced molt through starvation'
+  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
+  'veal crate': 'calf confinement'
+  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
+  'veal crates': 'calf confinement'
+  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
+  'veal-crate': 'calf confinement'
+  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
+  'veal-crates': 'calf confinement'
+  # humane-slaughter: Industry euphemism suggesting killing animals is 'kind' or 'without suffering.' 'Animal slaughter' or 'killing' is more accurate.
+  'humane slaughter': 'animal slaughter'
+  # humane-slaughter: Industry euphemism suggesting killing animals is 'kind' or 'without suffering.' 'Animal slaughter' or 'killing' is more accurate.
+  'humane-slaughter': 'animal slaughter'
+  # by-products: Industry euphemism for animal body parts not used for primary meat product. 'Animal waste' or 'rendered animal parts' is more accurate.
+  'by-products': 'rendered animal parts'
+  # by-product: Industry euphemism for animal body parts not used for primary meat product. 'Animal waste' or 'rendered animal parts' is more accurate.
+  'by-product': 'rendered animal parts'
+  # culling: Industry euphemism for selectively killing animals deemed economically unviable. 'Killing' or 'selective slaughter' is more accurate.
+  'culling': 'selective slaughter'
+  # culling: Industry euphemism for selectively killing animals deemed economically unviable. 'Killing' or 'selective slaughter' is more accurate.
+  'culled': 'selectively slaughtered'
+  # culling: Industry euphemism for selectively killing animals deemed economically unviable. 'Killing' or 'selective slaughter' is more accurate.
+  'culls': 'selectively slaughtered animals'
+  # depopulation: Industry euphemism for mass killing of animals (often during disease outbreaks). 'Mass slaughter' or 'mass killing' is more accurate.
+  'depopulation': 'mass slaughter'
+  # depopulation: Industry euphemism for mass killing of animals (often during disease outbreaks). 'Mass slaughter' or 'mass killing' is more accurate.
+  'depopulating': 'mass slaughtering'
+  # depopulation: Industry euphemism for mass killing of animals (often during disease outbreaks). 'Mass slaughter' or 'mass killing' is more accurate.
+  'depopulated': 'mass slaughtered'
+  # processing: Industry euphemism for slaughtering animals for meat/products. 'Slaughtering' or 'butchering' is more accurate.
+  'processing': 'slaughtering'
+  # processing: Industry euphemism for slaughtering animals for meat/products. 'Slaughtering' or 'butchering' is more accurate.
+  'processed meat': 'slaughtered animal meat'
+  # processing: Industry euphemism for slaughtering animals for meat/products. 'Slaughtering' or 'butchering' is more accurate.
+  'processed animals': 'slaughtered animals'
+  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
+  'harvesting fish': 'catching fish'
+  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
+  'harvesting seafood': 'catching seafood'
+  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
+  'harvesting': 'catching or killing'
+  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
+  'harvested': 'caught or killed'
+  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
+  'harvesting animals': 'killing animals'
+  # putting-down: Industry euphemism for killing animals (pets, livestock). 'Euthanizing' or 'killing' is more accurate.
+  'putting down': 'euthanizing'
+  # putting-down: Industry euphemism for killing animals (pets, livestock). 'Euthanizing' or 'killing' is more accurate.
+  'put down': 'euthanize'
+  # euthanasia: Industry euphemism (when used for agricultural animals). 'Slaughter' or 'killing' is more accurate for farm animals. For companion animals in end-of-life care, this is appropriate.
+  # Commenting this out as it has legitimate uses
+  # 'euthanasia': 'killing'
+  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
+  'confined animal feeding operation': 'factory farm'
+  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
+  'confinement animal feeding operation': 'factory farm'
+  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
+  'animal feeding operation': 'factory farm'
+  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
+  'CAFO': 'factory farm'
+  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
+  'factory farming': 'intensive animal agriculture'
+  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
+  'factory-farming': 'intensive animal agriculture'
+  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
+  'factory-farmed': 'intensively farmed'
+  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
+  'factory-farm': 'intensive animal farm'
+  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
+  'broiler chicken': 'fast-growth chicken'
+  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
+  'broiler chickens': 'fast-growth chickens'
+  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
+  'broiler': 'fast-growth chicken'
+  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
+  'broilers': 'fast-growth chickens'
+  # layer: Industry term for egg-laying hens. 'Egg-laying hen' is more transparent.
+  'layer': 'egg-laying hen'
+  # layer: Industry term for egg-laying hens. 'Egg-laying hen' is more transparent.
+  'layers': 'egg-laying hens'
+  # breeder: Industry term for animals bred for reproduction. 'Breeding animal' is more transparent.
+  'breeder': 'breeding animal'
+  # breeder: Industry term for animals bred for reproduction. 'Breeding animal' is more transparent.
+  'breeders': 'breeding animals'
+  # spent-hen: Industry term for an egg-laying hen past her productive prime, typically killed. 'Exhausted hen' or 'end-of-life hen' is more transparent.
+  'spent hen': 'exhausted hen'
+  # spent-hen: Industry term for an egg-laying hen past her productive prime, typically killed. 'Exhausted hen' or 'end-of-life hen' is more transparent.
+  'spent hens': 'exhausted hens'
+  # beak-trimming: Industry euphemism for cutting off the sensitive beaks of birds to prevent stress-induced pecking in overcrowded conditions. 'Beak cutting' or 'beak amputation' is more accurate.
+  'beak trimming': 'beak cutting'
+  # beak-trimming: Industry euphemism for cutting off the sensitive beaks of birds to prevent stress-induced pecking in overcrowded conditions. 'Beak cutting' or 'beak amputation' is more accurate.
+  'beak-trimming': 'beak cutting'
+  # beak-trimming: Industry euphemism for cutting off the sensitive beaks of birds to prevent stress-induced pecking in overcrowded conditions. 'Beak cutting' or 'beak amputation' is more accurate.
+  'trimmed beaks': 'cut beaks'
+  # tail-docking: Industry euphemism for cutting off the tails of piglets to prevent tail-biting caused by stress in overcrowded conditions. 'Tail cutting' or 'tail amputation' is more accurate.
+  'tail docking': 'tail cutting'
+  # tail-docking: Industry euphemism for cutting off the tails of piglets to prevent tail-biting caused by stress in overcrowded conditions. 'Tail cutting' or 'tail amputation' is more accurate.
+  'tail-docking': 'tail cutting'
+  # tail-docking: Industry euphemism for cutting off the tails of piglets to prevent tail-biting caused by stress in overcrowded conditions. 'Tail cutting' or 'tail amputation' is more accurate.
+  'docked tails': 'cut tails'
+  # dehorning: Industry euphemism for removing the horns/horn buds of cattle (often painfully). 'Horn removal' or 'debudding' is more accurate.
+  'dehorning': 'horn removal'
+  # dehorning: Industry euphemism for removing the horns/horn buds of cattle (often painfully). 'Horn removal' or 'debudding' is more accurate.
+  'dehorned': 'horns removed'
+  # dehorning: Industry euphemism for removing the horns/horn buds of cattle (often painfully). 'Horn removal' or 'debudding' is more accurate.
+  'dehorning cattle': 'removing cattle horns'
+  # castration: When done without anesthesia on farm animals, this is painful harm. 'Surgical castration' or 'neutering without anesthesia' is more transparent.
+  # Commenting this out as castration with anesthesia is appropriate. The issue is lack of anesthesia.
+  # 'castration': 'neutering with anesthesia'
+  # stunning: Industry euphemism for rendering an animal unconscious before slaughter (which doesn't always work). 'Rendering unconscious' or 'pre-slaughter rendering' is more transparent.
+  'stunning': 'rendering unconscious'
+  # stunning: Industry euphemism for rendering an animal unconscious before slaughter (which doesn't always work). 'Rendering unconscious' or 'pre-slaughter rendering' is more transparent.
+  'stunned': 'rendered unconscious'
+  # wet market: Term for markets selling live and dead animals, often with poor conditions. 'Live animal market' or 'animal market' is more transparent (and less stigmatizing to specific cultures).
+  'wet market': 'live animal market'
+  # wet market: Term for markets selling live and dead animals, often with poor conditions. 'Live animal market' or 'animal market' is more transparent (and less stigmatizing to specific cultures).
+  'wet markets': 'live animal markets'
+  # skin-trade: Industry term for fur industry. 'Fur industry' is more transparent and less dehumanizing.
+  'skin trade': 'fur industry'
+  # wildlife-trafficking: Term for illegal trade in wild animals. While not inherently dehumanizing, 'illegal animal trade' is clearer.
+  # Commenting this out as it's more of a technical term than an idiom
+  # 'wildlife trafficking': 'illegal animal trade'
+  # apex-predator: Term often used to justify killing large carnivores. 'Top predator' or 'keystone species' is more scientific and less justificatory.
+  'apex predator': 'top predator'
+  # apex-predator: Term often used to justify killing large carnivores. 'Top predator' or 'keystone species' is more scientific and less justificatory.
+  'apex predators': 'top predators'
+  # game-animal: Industry term for wild animals hunted for sport/food. 'Hunted animal' or 'wild animal' is more transparent.
+  'game animal': 'hunted animal'
+  # game-animal: Industry term for wild animals hunted for sport/food. 'Hunted animal' or 'wild animal' is more transparent.
+  'game animals': 'hunted animals'
+  # vermin: Term used to justify killing animals considered pests. 'Pest species' or 'conflict animal' is more neutral.
+  'vermin': 'pest species'
+  # invasive-species: Term sometimes used to justify eradicating non-native species. 'Non-native species' or 'introduced species' is more neutral.
+  'invasive species': 'introduced species'
+  # invasive-species: Term sometimes used to justify eradicating non-native species. 'Non-native species' or 'introduced species' is more neutral.
+  'invasive species management': 'non-native species management'
+  # wildlife-management: Euphemism for killing wild animals to control populations. 'Population control' or 'lethal control' is more transparent.
+  'wildlife management': 'population control'
+  # wildlife-management: Euphemism for killing wild animals to control populations. 'Population control' or 'lethal control' is more transparent.
+  'wildlife-management': 'population control'
+  # pest-control: Euphemism for killing animals. 'Pest killing' or 'lethal control' is more transparent.
+  'pest control': 'pest killing'
+  # pest-control: Euphemism for killing animals. 'Pest killing' or 'lethal control' is more transparent.
+  'pest-control': 'pest killing'
+  # rodent-control: Euphemism for killing rodents. 'Rodent killing' or 'lethal control' is more transparent.
+  'rodent control': 'rodent killing'
+  # rodent-control: Euphemism for killing rodents. 'Rodent killing' or 'lethal control' is more transparent.
+  'rodent-control': 'rodent killing'
+  # animal-control: Industry term for government agencies that confine, kill, and euthanize animals. 'Animal services' or 'animal shelter' is more transparent.
+  'animal control': 'animal services'
+  # animal-control: Industry term for government agencies that confine, kill, and euthanize animals. 'Animal services' or 'animal shelter' is more transparent.
+  'animal-control': 'animal services'
+  # pound: Term for facilities that confine and often kill stray animals. 'Shelter' or 'animal facility' is more neutral.
+  'pound': 'shelter'
+  # roadkill: Term for animals killed on roadways. While direct, it can be dehumanizing. 'Wildlife hit by vehicles' or 'vehicle-struck animals' is more respectful.
+  'roadkill': 'wildlife hit by vehicles'
+  # roadkill: Term for animals killed on roadways. While direct, it can be dehumanizing. 'Wildlife hit by vehicles' or 'vehicle-struck animals' is more respectful.
+  'roadkills': 'wildlife hit by vehicles'
+  # carrion: While a technical term, it can be disrespectful when referring to animal remains. 'Animal remains' or 'dead animal' is more respectful.
+  # Commenting this out as it's more of a technical term
+  # 'carrion': 'animal remains'

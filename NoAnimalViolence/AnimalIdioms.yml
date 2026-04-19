@@ -1,112 +1,345 @@
 # AUTO-GENERATED from Open-Paws/no-animal-violence. Do not edit directly.
 extends: substitution
-message: "Consider using '%s' instead of '%s'. This phrase normalizes violence toward animals."
-link: https://doi.org/10.1007/s43681-023-00380-w
+message: "Consider using '%s' instead of '%s'. This phrase normalizes violence toward animals (see rule comment for why)."
 level: warning
 ignorecase: true
 swap:
+  # kill-two-birds-with-one-stone: This phrase frames killing animals as a routine way to solve a problem. Plain alternatives like 'accomplish two things at once' carry the same meaning without invoking harm.
   'kill two birds with one stone': 'accomplish two things at once'
+  # kill-two-birds-with-one-stone: This phrase frames killing animals as a routine way to solve a problem. Plain alternatives like 'accomplish two things at once' carry the same meaning without invoking harm.
   'killing two birds with one stone': 'accomplish two things at once'
+  # kill-two-birds-with-one-stone: This phrase frames killing animals as a routine way to solve a problem. Plain alternatives like 'accomplish two things at once' carry the same meaning without invoking harm.
   'killed two birds with one stone': 'accomplish two things at once'
-  'beat a dead horse': 'belabor the point'
-  'beating a dead horse': 'belabor the point'
-  'more than one way to skin a cat': 'more than one way to solve this'
-  'many ways to skin a cat': 'more than one way to solve this'
-  'other ways to skin a cat': 'more than one way to solve this'
+  # beat-a-dead-horse: This phrase frames beating a dead animal as a metaphor for pointless effort. 'Beating a dead horse' doesn't need to invoke animal violence to make the same point. Plain alternatives like 'pointless' carry the meaning without the violence.
+  'beat a dead horse': 'pointless or repetitive effort'
+  # beat-a-dead-horse: This phrase frames beating a dead animal as a metaphor for pointless effort. 'Beating a dead horse' doesn't need to invoke animal violence to make the same point. Plain alternatives like 'pointless' carry the meaning without the violence.
+  'beating a dead horse': 'pointless or repetitive effort'
+  # beat-a-dead-horse: This phrase frames beating a dead animal as a metaphor for pointless effort. 'Beating a dead horse' doesn't need to invoke animal violence to make the same point. Plain alternatives like 'pointless' carry the meaning without the violence.
+  'beaten a dead horse': 'pointless or repetitive effort'
+  # pig-out: Frame overeating as being like a pig (which do root around in dirt/feed heavily). 'Indulge' or 'overeat' directly describe the behavior without the denigrating pig comparison.
+  'pig out': 'overeat or indulge'
+  # pig-out: Frame overeating as being like a pig (which do root around in dirt/feed heavily). 'Indulge' or 'overeat' directly describe the behavior without the denigrating pig comparison.
+  'pigging out': 'overeating or indulging'
+  # pig-out: Frame overeating as being like a pig (which do root around in dirt/feed heavily). 'Indulge' or 'overeat' directly describe the behavior without the denigrating pig comparison.
+  'pigged out': 'overate or indulged'
+  # chicken-out: Frames chickens as cowardly. 'Back down' or 'lose your nerve' don't require invoking animal characteristics.
+  'chicken out': 'back down or lose your nerve'
+  # chicken-out: Frames chickens as cowardly. 'Back down' or 'lose your nerve' don't require invoking animal characteristics.
+  'chickening out': 'backing down or losing your nerve'
+  # chicken-out: Frames chickens as cowardly. 'Back down' or 'lose your nerve' don't require invoking animal characteristics.
+  'chickened out': 'backed down or lost your nerve'
+  # ape-it: Frames apes (and by extension, people of color) as unintelligent mimics. 'Copy' or 'mimic' work better without the dehumanizing comparison.
+  'ape it': 'copy or mimic'
+  # ape-it: Frames apes (and by extension, people of color) as unintelligent mimics. 'Copy' or 'mimic' work better without the dehumanizing comparison.
+  'aping it': 'copying or mimicking'
+  # ape-it: Frames apes (and by extension, people of color) as unintelligent mimics. 'Copy' or 'mimic' work better without the dehumanizing comparison.
+  'aped it': 'copied or mimicked'
+  # go-ape: Frames apes (and by extension, people of color) as wild/crazy. 'Go wild' or 'act crazy' convey the same meaning without the dehumanizing comparison.
+  'go ape': 'go wild or act crazy'
+  # go-ape: Frames apes (and by extension, people of color) as wild/crazy. 'Go wild' or 'act crazy' convey the same meaning without the dehumanizing comparison.
+  'going ape': 'going wild or acting crazy'
+  # go-ape: Frames apes (and by extension, people of color) as wild/crazy. 'Go wild' or 'act crazy' convey the same meaning without the dehumanizing comparison.
+  'went ape': 'went wild or acted crazy'
+  # ape-suit-up: Apes as subjects of ridicule. 'Dress up' or 'put on a costume' work without the ape comparison.
+  'ape suit': 'costume or outfit'
+  # monkey-around: Frames monkeys as silly/frivolous. 'Fool around' or 'goof off' work without the monkey comparison.
+  'monkey around': 'fool around or goof off'
+  # monkey-around: Frames monkeys as silly/frivolous. 'Fool around' or 'goof off' work without the monkey comparison.
+  'monkeying around': 'fooling around or goofing off'
+  # monkey-around: Frames monkeys as silly/frivolous. 'Fool around' or 'goof off' work without the monkey comparison.
+  'monkeyed around': 'fooled around or goofed off'
+  # monkey-business: Frames monkeys as silly/frivolous. 'Mischief' or 'foolishness' work without the monkey comparison.
+  'monkey business': 'mischief or foolishness'
+  # monkey-wrench: Frames monkeys as tools for sabotage. 'Sabotage' or 'disrupt' work without the monkey comparison.
+  'monkey wrench': 'sabotage or disrupt'
+  # monkey-wrench: Frames monkeys as tools for sabotage. 'Sabotage' or 'disrupt' work without the monkey comparison.
+  'threw a monkey wrench': 'sabotaged or disrupted'
+  # monkey-see-monkey-do: Frames monkeys (and by extension people of color) as mindless copycats. 'Mindlessly imitate' conveys the meaning without the dehumanizing comparison.
+  'monkey see monkey do': 'mindlessly imitate'
+  # get-one%27s-goat: Frames goats as easily upset/triggerable. 'Annoy' or 'upset' work without the goat comparison.
+  'get someone\'s goat': 'annoy or upset them'
+  # get-one%27s-goat: Frames goats as easily upset/triggerable. 'Annoy' or 'upset' work without the goat comparison.
+  'got my goat': 'annoyed or upset me'
+  # goat-rodeo: Frames goats as chaotic/out of control. 'Chaos' or 'mess' work without the goat comparison.
+  'goat rodeo': 'chaos or mess'
+  # wild-goose-chase: Frames wild geese as wasted effort. 'Pointless search' conveys the meaning without invoking animals.
+  'wild goose chase': 'pointless search or wild pursuit'
+  # wild-goose-chase: Frames wild geese as wasted effort. 'Pointless search' conveys the meaning without invoking animals.
+  'wild-goose-chasing': 'pointless searching or wild pursuing'
+  # wild-goose-chase: Frames wild geese as wasted effort. 'Pointless search' conveys the meaning without invoking animals.
+  'on a wild goose chase': 'on a pointless search or wild pursuit'
+  # sacred-cow: Frames sacred cows (respected in Hindu tradition) as untouchable obstacles. While 'untouchable' and 'off-limits' convey the same meaning without the cultural appropriation.
+  'sacred cow': 'untouchable or off-limits'
+  # sacred-cow: Frames sacred cows (respected in Hindu tradition) as untouchable obstacles. While 'untouchable' and 'off-limits' convey the same meaning without the cultural appropriation.
+  'sacred cows': 'untouchable or off-limits ideas'
+  # dog-and-pony-show: Frames dogs and ponies as tricks/spectacle. 'Spectacle' or 'staged show' work without invoking animals.
+  'dog and pony show': 'spectacle or staged show'
+  # dog-and-pony-show: Frames dogs and ponies as tricks/spectacle. 'Spectacle' or 'staged show' work without invoking animals.
+  'dog-and-pony shows': 'spectacles or staged shows'
+  # dog-eat-dog: Frames dogs as vicious competitors. 'Cutthroat' or 'ruthless' convey the same meaning without invoking animal violence.
+  'dog eat dog': 'cutthroat or ruthless'
+  # dog-eat-dog: Frames dogs as vicious competitors. 'Cutthroat' or 'ruthless' convey the same meaning without invoking animal violence.
+  'dog-eat-dog world': 'cutthroat or ruthless world'
+  # cat-got-your-tongue: Frames cats as taking away speech. 'Speechless' or 'quiet' work without the cat comparison.
+  'cat got your tongue': 'silent or speechless'
+  # cat-got-your-tongue: Frames cats as taking away speech. 'Speechless' or 'quiet' work without the cat comparison.
+  'cat got your tongue?': 'why are you silent?'
+  # cat-got-your-tongue: Frames cats as taking away speech. 'Speechless' or 'quiet' work without the cat comparison.
+  'cat\'s got your tongue': 'you\'re silent or speechless'
+  # copy-cat: Frames cats as mindless copiers. 'Copycat' or 'imitator' work without the comparison.
+  'copy-cat': 'copycat or imitator'
+  # copy-cat: Frames cats as mindless copiers. 'Copycat' or 'imitator' work without the comparison.
+  'copycat': 'copycat or imitator'
+  # copy-cat: Frames cats as mindless copiers. 'Copycat' or 'imitator' work without the comparison.
+  'copy cats': 'copycats or imitators'
+  # fat-cat: Frames fat cats as greedy/corrupt. 'Greedy person' or 'corporate executive' work without the comparison.
+  'fat cat': 'greedy person or corporate executive'
+  # fat-cat: Frames fat cats as greedy/corrupt. 'Greedy person' or 'corporate executive' work without the comparison.
+  'fat cats': 'greedy people or corporate executives'
+  # fat-cat: Frames fat cats as greedy/corrupt. 'Greedy person' or 'corporate executive' work without the comparison.
+  'fat-cat': 'greedy or corporate'
+  # let-the-cat-out-of-the-bag: Frames cats as secrets. 'Reveal the secret' conveys the meaning without invoking cats.
   'let the cat out of the bag': 'reveal the secret'
-  'letting the cat out of the bag': 'reveal the secret'
-  'open a can of worms': 'create a complicated situation'
-  'opening a can of worms': 'create a complicated situation'
-  'opened a can of worms': 'create a complicated situation'
-  'wild goose chase': 'futile search'
-  'like shooting fish in a barrel': 'trivially easy'
-  'flog a dead horse': 'belabor the point'
-  'flogging a dead horse': 'belabor the point'
-  'there are bigger fish to fry': 'more important matters to address'
-  'guinea pig': 'test subject'
-  'hold your horses': 'wait a moment'
-  'the elephant in the room': 'the obvious issue'
-  'straight from the horse''s mouth': 'directly from the source'
-  'bring home the bacon': 'bring home the results'
-  'bringing home the bacon': 'bring home the results'
-  'brought home the bacon': 'bring home the results'
-  'brings home the bacon': 'bring home the results'
-  'take the bull by the horns': 'face the challenge head-on'
-  'taking the bull by the horns': 'face the challenge head-on'
-  'took the bull by the horns': 'face the challenge head-on'
-  'like lambs to the slaughter': 'without resistance'
-  'no room to swing a cat': 'very cramped'
-  'red herring': 'distraction'
-  'curiosity killed the cat': 'curiosity backfired'
-  'like a chicken with its head cut off': 'in a panic'
-  'your goose is cooked': 'you''re in trouble'
-  'throw someone to the wolves': 'abandon to criticism'
-  'throwing someone to the wolves': 'abandon to criticism'
-  'threw someone to the wolves': 'abandon to criticism'
-  'hook, line, and sinker': 'completely'
-  'clip someone''s wings': 'restrict someone''s freedom'
-  'clipping someone''s wings': 'restrict someone''s freedom'
-  'clipped someone''s wings': 'restrict someone''s freedom'
-  'the straw that broke the camel''s back': 'the tipping point'
-  'a bird in the hand is worth two in the bush': 'a sure thing beats a possibility'
-  'eat crow': 'admit being wrong'
-  'eating crow': 'admit being wrong'
-  'fight like cats and dogs': 'constantly argue'
-  'fighting like cats and dogs': 'constantly argue'
-  'fought like cats and dogs': 'constantly argue'
-  'take the bait': 'fall for it'
-  'taking the bait': 'fall for it'
-  'took the bait': 'fall for it'
-  'don''t count your chickens before they hatch': 'don''t assume success prematurely'
-  'don''t be a chicken': 'don''t hesitate'
-  'pig': 'resource-intensive'
-  'cowboy coding': 'undisciplined coding'
-  'code monkey': 'developer'
-  'badger someone': 'pester'
-  'ferret out': 'uncover'
-  'cattle vs. pets': 'ephemeral vs. persistent'
-  'pet project': 'side project'
-  'canary in a coal mine': 'early warning signal'
-  'dogfooding': 'self-hosting'
-  'dogfood': 'self-hosting'
-  'eating your own dogfood': 'self-hosting'
-  'eat your own dogfood': 'self-hosting'
-  'herding cats': 'coordinating independent contributors'
-  'go on a fishing expedition': 'exploratory investigation'
-  'sacred cow': 'unquestioned belief'
-  'sacred cows': 'unquestioned belief'
-  'scapegoat': 'blame target'
-  'scapegoated': 'blame target'
-  'scapegoating': 'blame target'
-  'rat race': 'daily grind'
-  'dead cat bounce': 'temporary rebound'
-  'dog-eat-dog': 'ruthlessly competitive'
-  'dog eat dog': 'ruthlessly competitive'
-  'whack-a-mole': 'recurring problem'
-  'whack a mole': 'recurring problem'
-  'cash cow': 'profit center'
-  'cash cows': 'profit center'
-  'sacrificial lamb': 'expendable person'
-  'sacrificial lambs': 'expendable person'
-  'sitting duck': 'easy target'
-  'sitting ducks': 'easy target'
-  'open season': 'free-for-all'
-  'opening season': 'free-for-all'
-  'opened season': 'free-for-all'
-  'put out to pasture': 'retire'
-  'dead duck': 'lost cause'
-  'dead ducks': 'lost cause'
-  'kill process': 'terminate the process'
-  'killing process': 'terminate the process'
-  'killed process': 'terminate the process'
-  'kill the server': 'stop the server'
-  'killing the server': 'stop the server'
-  'killed the server': 'stop the server'
-  'nuke': 'delete completely'
-  'abort': 'cancel'
-  'cull': 'remove'
-  'master/slave': 'primary/replica'
-  'whitelist/blacklist': 'allowlist/denylist'
-  'grandfathered': 'legacy'
-  'lame duck': 'outgoing'
-  'lame-duck': 'outgoing'
+  # let-the-cat-out-of-the-bag: Frames cats as secrets. 'Reveal the secret' conveys the meaning without invoking cats.
+  'let cat out of the bag': 'reveal the secret'
+  # let-the-cat-out-of-the-bag: Frames cats as secrets. 'Reveal the secret' conveys the meaning without invoking cats.
+  'letting the cat out of the bag': 'revealing the secret'
+  # let-the-cat-out-of-the-bag: Frames cats as secrets. 'Reveal the secret' conveys the meaning without invoking cats.
+  'let the cats out of the bag': 'reveal the secrets'
+  # rat-out: Frames rats as informants/traitors. 'Betray' or 'inform on' work without the rat comparison.
+  'rat out': 'betray or inform on'
+  # rat-out: Frames rats as informants/traitors. 'Betray' or 'inform on' work without the rat comparison.
+  'ratting out': 'betraying or informing on'
+  # rat-out: Frames rats as informants/traitors. 'Betray' or 'inform on' work without the rat comparison.
+  'ratted out': 'betrayed or informed on'
+  # rat-race: Frames rats in competition as pointless. 'Endless competition' or 'grind' work without the comparison.
+  'rat race': 'endless competition or grind'
+  # rat-race: Frames rats in competition as pointless. 'Endless competition' or 'grind' work without the comparison.
+  'rat-racing': 'grinding or endlessly competing'
+  # snake-in-the-grass: Frames snakes as traitors/threats. 'Treacherous person' conveys the meaning without invoking snakes.
+  'snake in the grass': 'treacherous person'
+  # snake-in-the-grass: Frames snakes as traitors/threats. 'Treacherous person' conveys the meaning without invoking snakes.
+  'snakes in the grass': 'treacherous people'
+  # snake-oil: Frames snakes as worthless con jobs. 'Scam' or 'fraud' work without the snake comparison.
+  'snake oil': 'scam or fraud'
+  # snake-oil: Frames snakes as worthless con jobs. 'Scam' or 'fraud' work without the snake comparison.
+  'snake-oil salesman': 'scammer or con artist'
+  # badger: Frames badgers as aggressive annoyers. 'Pester' or 'harass' work without the comparison.
+  'badger': 'pester or harass'
+  # badger: Frames badgers as aggressive annoyers. 'Pester' or 'harass' work without the comparison.
+  'badgered': 'pestered or harassed'
+  # badger: Frames badgers as aggressive annoyers. 'Pester' or 'harass' work without the comparison.
+  'badgering': 'pestering or harassing'
+  # badger: Frames badgers as aggressive annoyers. 'Pester' or 'harass' work without the comparison.
+  'badgers': 'pesters or harasses'
+  # bird-brain: Frames birds as stupid. 'Stupid' or 'foolish' work without the bird comparison.
+  'bird brain': 'stupid or foolish'
+  # bird-brain: Frames birds as stupid. 'Stupid' or 'foolish' work without the bird comparison.
+  'bird-brained': 'stupid or foolish'
+  # bird-brain: Frames birds as stupid. 'Stupid' or 'foolish' work without the bird comparison.
+  'birdbrain': 'stupid or foolish'
+  # birdie: Frames birds as small/weak. 'Small' or 'weak' work without the bird comparison.
+  'birdie': 'small or weak shot'
+  # fish-out-of-water: Frames fish as out of place. 'Out of place' or 'uncomfortable' work without invoking fish.
+  'fish out of water': 'out of place or uncomfortable'
+  # fish-out-of-water: Frames fish as out of place. 'Out of place' or 'uncomfortable' work without invoking fish.
+  'like a fish out of water': 'like you\'re out of place or uncomfortable'
+  # fish-out-of-water: Frames fish as out of place. 'Out of place' or 'uncomfortable' work without invoking fish.
+  'fishes out of water': 'out of place or uncomfortable'
+  # fishery: Frames fish as products. 'Fishing industry' or 'aquatic farming' work without the dehumanizing comparison.
+  'fishery': 'fishing industry'
+  # frog-in-a-well: Frames frogs as limited/ignorant. 'Limited perspective' or 'ignorant' work without the frog comparison.
+  'frog in the well': 'limited perspective or ignorant'
+  # frog-in-a-well: Frames frogs as limited/ignorant. 'Limited perspective' or 'ignorant' work without the frog comparison.
+  'frog in a well': 'limited perspective or ignorant'
+  # frog-march: Frames frogs as subjects of force. 'Force' or 'march forcibly' work without the frog comparison.
+  'frog march': 'forcefully escort'
+  # frog-march: Frames frogs as subjects of force. 'Force' or 'march forcibly' work without the frog comparison.
+  'frog-marched': 'forcefully escorted'
+  # frog-march: Frames frogs as subjects of force. 'Force' or 'march forcibly' work without the frog comparison.
+  'frog-marching': 'forcefully escorting'
+  # horse-of-a-different-color: Frames horses as incomprehensible. 'Something completely different' works without invoking horses.
+  'horse of a different color': 'something completely different'
+  # horse-of-a-different-color: Frames horses as incomprehensible. 'Something completely different' works without invoking horses.
+  'horse of a different colour': 'something completely different'
+  # beat-a-dead-horse: Frames horses as victims of pointless harm. 'Beat a dead horse' doesn't need animal violence. 'Pointless effort' works better.
+  'beat the horse': 'pointless effort'
+  # get-off-your-high-horse: Frames horses as pedestals. 'Humble yourself' or 'be more modest' work without the horse comparison.
+  'get off your high horse': 'humble yourself or be more modest'
+  # get-off-your-high-horse: Frames horses as pedestals. 'Humble yourself' or 'be more modest' work without the horse comparison.
+  'off your high horse': 'humble yourself or be more modest'
+  # get-off-your-high-horse: Frames horses as pedestals. 'Humble yourself' or 'be more modest' work without the horse comparison.
+  'high horse': 'arrogant or proud attitude'
+  # hold-your-horses: Frames horses as speed/impatience. 'Hold on' or 'wait a moment' work without the horse comparison.
+  'hold your horses': 'wait a moment or hold on'
+  # hold-your-horses: Frames horses as speed/impatience. 'Hold on' or 'wait a moment' work without the horse comparison.
+  'holding your horses': 'waiting a moment or holding on'
+  # horse-around: Frames horses as silly/frivolous. 'Fool around' or 'goof off' work without the horse comparison.
+  'horse around': 'fool around or goof off'
+  # horse-around: Frames horses as silly/frivolous. 'Fool around' or 'goof off' work without the horse comparison.
+  'horsing around': 'fooling around or goofing off'
+  # horse-around: Frames horses as silly/frivolous. 'Fool around' or 'goof off' work without the horse comparison.
+  'horsed around': 'fooled around or goofed off'
+  # horse-sense: Frames horses as practical/wise. 'Common sense' works without the horse comparison.
+  'horse sense': 'common sense or practical wisdom'
+  # horse-sense: Frames horses as practical/wise. 'Common sense' works without the horse comparison.
+  'horse-sensible': 'practical or wise'
+  # seahorse: Frames seahorses as horses. 'Seahorse' is fine as it's the actual name of the animal, not a comparison.
+  # Commenting this out as it's not a problematic idiom but rather the actual name of a species
+  # 'seahorse': 'sea creature'
+  # pony-up: Frames ponies as payment/obligation. 'Pay up' or 'contribute' work without the pony comparison.
+  'pony up': 'pay up or contribute'
+  # pony-up: Frames ponies as payment/obligation. 'Pay up' or 'contribute' work without the pony comparison.
+  'ponied up': 'paid up or contributed'
+  # pony-up: Frames ponies as payment/obligation. 'Pay up' or 'contribute' work without the pony comparison.
+  'ponying up': 'paying up or contributing'
+  # pony-express: Not a derogatory idiom. Commenting out.
+  # 'pony express': 'fast delivery'
+  # straight-from-the-horse%27s-mouth: Frames horses as sources of truth. 'Straight from the source' works without the horse comparison.
+  'straight from the horse\'s mouth': 'straight from the source'
+  # straight-from-the-horse%27s-mouth: Frames horses as sources of truth. 'Straight from the source' works without the horse comparison.
+  'from the horse\'s mouth': 'from the source'
+  # gift-horse: Frames horses as unwanted gifts. 'Gift' works without the horse comparison.
+  'gift horse': 'gift'
+  # gift-horse: Frames horses as unwanted gifts. 'Gift' works without the horse comparison.
+  'look a gift horse in the mouth': 'criticize a gift ungratefully'
+  # tiger-economy: Frames tigers as economic growth. 'Fast-growing economy' works without the tiger comparison.
+  'tiger economy': 'fast-growing economy'
+  # tiger-mom: Frames tigers as strict/harsh. 'Strict parent' works without the tiger comparison.
+  'tiger mom': 'strict or demanding parent'
+  # tiger-mom: Frames tigers as strict/harsh. 'Strict parent' works without the tiger comparison.
+  'tiger mother': 'strict or demanding parent'
+  # tiger-stripe: Frames tigers as patterns. 'Stripe pattern' works without the tiger comparison.
+  'tiger stripe': 'stripe pattern'
+  # tiger-stripe: Frames tigers as patterns. 'Stripe pattern' works without the tiger comparison.
+  'tiger-striped': 'striped'
+  # lion-hearted: Frames lions as courageous. 'Courageous' works without the lion comparison.
+  'lion-hearted': 'courageous or brave'
+  # lion-hearted: Frames lions as courageous. 'Courageous' works without the lion comparison.
+  'lion heart': 'courageous or brave'
+  # lion-hearted: Frames lions as courageous. 'Courageous' works without the lion comparison.
+  'lion-hearted person': 'courageous or brave person'
+  # social-butterfly: Frames butterflies as social. 'Social person' works without the butterfly comparison.
+  'social butterfly': 'social or outgoing person'
+  # social-butterfly: Frames butterflies as social. 'Social person' works without the butterfly comparison.
+  'social butterflies': 'social or outgoing people'
+  # quiet-as-a-mouse: Frames mice as quiet. 'Quiet' works without the mouse comparison.
+  'quiet as a mouse': 'very quiet'
+  # quiet-as-a-mouse: Frames mice as quiet. 'Quiet' works without the mouse comparison.
+  'quiet as mice': 'very quiet'
+  # slippery-as-an-eel: Frames eels as untrustworthy. 'Untrustworthy' or 'evasive' work without the eel comparison.
+  'slippery as an eel': 'untrustworthy or evasive'
+  # stubborn-as-a-mule: Frames mules as stubborn. 'Stubborn' works without the mule comparison.
+  'stubborn as a mule': 'very stubborn'
+  # stubborn-as-a-donkey: Frames donkeys as stubborn. 'Stubborn' works without the donkey comparison.
+  'stubborn as a donkey': 'very stubborn'
+  # stubborn-as-a-jackass: Frames donkeys as stubborn/foolish. 'Stubborn' or 'foolish' work without the jackass comparison.
+  'stubborn as a jackass': 'very stubborn or foolish'
+  # slow-as-a-tortoise: Frames tortoises as slow. 'Slow' works without the tortoise comparison.
+  'slow as a tortoise': 'very slow'
+  # slow-as-a-snail: Frames snails as slow. 'Slow' works without the snail comparison.
+  'slow as a snail': 'very slow'
+  # busy-as-a-bee: Frames bees as busy. 'Busy' works without the bee comparison.
+  'busy as a bee': 'very busy'
+  # busy-as-a-beaver: Frames beavers as busy. 'Busy' works without the beaver comparison.
+  'busy as a beaver': 'very busy'
+  # happy-as-a-lark: Frames larks as happy. 'Happy' works without the lark comparison.
+  'happy as a lark': 'very happy'
+  # happy-as-a-clam: Frames clams as happy. 'Happy' works without the clam comparison.
+  'happy as a clam': 'very happy'
+  # happy-as-a-pig-in-mud: Frames pigs as happy in mud. 'Happy' works without the pig comparison.
+  'happy as a pig in mud': 'very happy'
+  # free-as-a-bird: Frames birds as free. 'Free' works without the bird comparison.
+  'free as a bird': 'very free'
+  # free-as-a-bird: Frames birds as free. 'Free' works without the bird comparison.
+  'free as birds': 'very free'
+  # deaf-as-a-post: Frames posts as deaf/unheeding. 'Deaf' works without the post comparison.
+  'deaf as a post': 'unable to hear'
+  # deaf-as-a-doornail: Frames doornails as deaf. 'Unable to hear' works without the doornail comparison.
+  'deaf as a doornail': 'unable to hear'
+  # strong-as-an-ox: Frames oxen as strong. 'Strong' works without the ox comparison.
+  'strong as an ox': 'very strong'
+  # wise-as-an-owl: Frames owls as wise. 'Wise' works without the owl comparison.
+  'wise as an owl': 'very wise or intelligent'
+  # sly-as-a-fox: Frames foxes as cunning/deceptive. 'Cunning' or 'clever' work without the fox comparison.
+  'sly as a fox': 'cunning or clever'
+  # blind-as-a-bat: Frames bats as blind. 'Unable to see' works without the bat comparison.
+  'blind as a bat': 'unable to see'
+  # sick-as-a-dog: Frames dogs as sick. 'Very ill' works without the dog comparison.
+  'sick as a dog': 'very ill'
+  # sick-as-a-parrot: Frames parrots as sick. 'Very ill' or 'very upset' works without the parrot comparison.
+  'sick as a parrot': 'very ill or very upset'
+  # well-as-a-loon: Frames loons as behaving erratically. 'Crazy' or 'unwell' work without the loon comparison.
+  'loony as a loon': 'crazy or acting erratically'
+  # well-as-a-loon: Frames loons as behaving erratically. 'Crazy' or 'unwell' work without the loon comparison.
+  'mad as a loon': 'crazy or acting erratically'
+  # drunk-as-a-skunk: Frames skunks as drunk. 'Very drunk' works without the skunk comparison.
+  'drunk as a skunk': 'very drunk'
+  # drunk-as-a-lord: Frames lords as drunk. 'Very drunk' works without the lord comparison.
+  'drunk as a lord': 'very drunk'
+  # meek-as-a-lamb: Frames lambs as meek/submissive. 'Meek' or 'gentle' work without the lamb comparison.
+  'meek as a lamb': 'meek or gentle'
+  # sharp-as-an-eagle: Frames eagles as having sharp vision. 'Sharp' or 'keen' work without the eagle comparison.
+  'sharp as an eagle': 'sharp or keen'
+  # sharp-as-a-fox: Frames foxes as clever. 'Clever' works without the fox comparison.
+  'sharp as a fox': 'clever or intelligent'
+  # sweet-as-honey: Frames honey as sweet (which is fine). But comparing people to honey objectifies them. 'Sweet' or 'kind' work without the honey comparison.
+  'sweet as honey': 'very sweet or kind'
+  # tough-as-nails: Frames nails as tough (which is fine, not an animal). This is okay to keep.
+  # 'tough as nails': 'very tough or resilient'
+  # tough-as-leather: Frames leather as tough. 'Tough' works without the leather comparison.
+  'tough as leather': 'very tough or resilient'
+  # tough-as-an-old-boot: Frames old boots as tough. 'Tough' works without the boot comparison.
+  'tough as an old boot': 'very tough or resilient'
+  # tough-as-an-old-boot: Frames old boots as tough. 'Tough' works without the boot comparison.
+  'tough as old boots': 'very tough or resilient'
+  # ugly-as-a-toad: Frames toads as ugly. 'Ugly' works without the toad comparison.
+  'ugly as a toad': 'very ugly'
+  # ugly-as-sin: Frames sin as ugly. 'Ugly' works without the sin comparison.
+  'ugly as sin': 'very ugly'
+  # mean-as-a-junkyard-dog: Frames junkyard dogs as mean. 'Mean' or 'aggressive' work without the dog comparison.
+  'mean as a junkyard dog': 'very mean or aggressive'
+  # hungry-as-a-bear: Frames bears as hungry. 'Very hungry' works without the bear comparison.
+  'hungry as a bear': 'very hungry'
+  # hungry-as-a-wolf: Frames wolves as hungry. 'Very hungry' works without the wolf comparison.
+  'hungry as a wolf': 'very hungry'
+  # cold-blooded: Frames reptiles as cruel/emotionless. 'Cruel' or 'unfeeling' work without the reptile comparison.
+  'cold blooded': 'cruel or unfeeling'
+  # cold-blooded: Frames reptiles as cruel/emotionless. 'Cruel' or 'unfeeling' work without the reptile comparison.
+  'cold-blooded killer': 'calculated murderer'
+  # cold-blooded: Frames reptiles as cruel/emotionless. 'Cruel' or 'unfeeling' work without the reptile comparison.
+  'cold-blooded murder': 'calculated or premeditated murder'
+  # venomous: Frames snakes (and similar animals) as inherently toxic/evil. 'Toxic' or 'hostile' work without the animal comparison.
+  'venomous person': 'toxic or hostile person'
+  # venomous: Frames snakes (and similar animals) as inherently toxic/evil. 'Toxic' or 'hostile' work without the animal comparison.
+  'venomous comment': 'toxic or hostile comment'
+  # venomous: Frames snakes (and similar animals) as inherently toxic/evil. 'Toxic' or 'hostile' work without the animal comparison.
+  'venomous remarks': 'toxic or hostile remarks'
+  # vulture: Frames vultures as greedy/predatory. 'Greedy' or 'predatory' work without the vulture comparison.
+  'vulture': 'greedy or predatory person'
+  # vulture: Frames vultures as greedy/predatory. 'Greedy' or 'predatory' work without the vulture comparison.
+  'vultures': 'greedy or predatory people'
+  # vulture-capitalism: Frames vultures as exploitative. 'Exploitative' or 'predatory' work without the vulture comparison.
+  'vulture capitalism': 'exploitative or predatory capitalism'
+  # shark-infested: Frames sharks as dangerous/predatory. 'Dangerous' or 'predatory' work without the shark comparison.
+  'shark-infested waters': 'dangerous or predatory environment'
+  # shark: Frames sharks as predatory/exploitative. 'Predatory' or 'exploitative' work without the shark comparison.
+  'loan shark': 'predatory lender'
+  # shark: Frames sharks as predatory/exploitative. 'Predatory' or 'exploitative' work without the shark comparison.
+  'loan sharks': 'predatory lenders'
+  # shark: Frames sharks as predatory/exploitative. 'Predatory' or 'exploitative' work without the shark comparison.
+  'shark': 'exploiter or ruthless person'
+  # weasel: Frames weasels as untrustworthy. 'Untrustworthy' or 'sneaky' work without the weasel comparison.
+  'weasel': 'untrustworthy or sneaky person'
+  # weasel: Frames weasels as untrustworthy. 'Untrustworthy' or 'sneaky' work without the weasel comparison.
+  'weasels': 'untrustworthy or sneaky people'
+  # weasel-out: Frames weasels as escapists. 'Escape' or 'shirk responsibility' work without the weasel comparison.
+  'weasel out': 'escape or shirk responsibility'
+  # weasel-out: Frames weasels as escapists. 'Escape' or 'shirk responsibility' work without the weasel comparison.
+  'weaseling out': 'escaping or shirking responsibility'
+  # weasel-out: Frames weasels as escapists. 'Escape' or 'shirk responsibility' work without the weasel comparison.
+  'weaseled out': 'escaped or shirked responsibility'
+  # coyote: Frames coyotes as tricksters/outlaws. 'Trickster' or 'outlaw' work without the coyote comparison.
+  'coyote': 'trickster or outlaw'
+  # coyotes: Frames coyotes as tricksters/outlaws. 'Trickster' or 'outlaw' work without the coyote comparison.
+  'coyotes': 'tricksters or outlaws'
