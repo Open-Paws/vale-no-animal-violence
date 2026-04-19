@@ -1,112 +1,623 @@
 # AUTO-GENERATED from Open-Paws/no-animal-violence. Do not edit directly.
 extends: substitution
-message: "Consider using '%s' instead of '%s'. This phrase normalizes violence toward animals."
+message: "Consider using '%s' instead of '%s'. This phrase normalizes violence toward animals (see rule comment for why)."
 link: https://doi.org/10.1007/s43681-023-00380-w
 level: warning
 ignorecase: true
 swap:
+  # kill-two-birds-with-one-stone: This phrase frames killing animals as a routine way to solve a problem. Plain alternatives like 'accomplish two things at once' carry the same meaning without invoking harm.
   'kill two birds with one stone': 'accomplish two things at once'
+  # kill-two-birds-with-one-stone: This phrase frames killing animals as a routine way to solve a problem. Plain alternatives like 'accomplish two things at once' carry the same meaning without invoking harm.
   'killing two birds with one stone': 'accomplish two things at once'
+  # kill-two-birds-with-one-stone: This phrase frames killing animals as a routine way to solve a problem. Plain alternatives like 'accomplish two things at once' carry the same meaning without invoking harm.
   'killed two birds with one stone': 'accomplish two things at once'
+  # beat-a-dead-horse: This phrase uses an image of striking an animal's body as a metaphor for wasted effort. 'Belabor the point' is clearer and skips the imagery.
   'beat a dead horse': 'belabor the point'
+  # beat-a-dead-horse: This phrase uses an image of striking an animal's body as a metaphor for wasted effort. 'Belabor the point' is clearer and skips the imagery.
   'beating a dead horse': 'belabor the point'
-  'more than one way to skin a cat': 'more than one way to solve this'
-  'many ways to skin a cat': 'more than one way to solve this'
-  'other ways to skin a cat': 'more than one way to solve this'
+  # skin-a-cat: Cat skinning as a metaphor for having options. 'Multiple approaches available' or 'more than one way to peel an orange' carries the same meaning.
+  'more than one way to skin a cat': 'more than one way to peel an orange'
+  # skin-a-cat: Cat skinning as a metaphor for having options. 'Multiple approaches available' or 'more than one way to peel an orange' carries the same meaning.
+  'another way to skin a cat': 'more than one way to peel an orange'
+  # skin-a-cat: Cat skinning as a metaphor for having options. 'Multiple approaches available' or 'more than one way to peel an orange' carries the same meaning.
+  'different ways to skin a cat': 'more than one way to peel an orange'
+  # skin-a-cat: Cat skinning as a metaphor for having options. 'Multiple approaches available' or 'more than one way to peel an orange' carries the same meaning.
+  'several ways to skin a cat': 'more than one way to peel an orange'
+  # let-the-cat-out-of-the-bag: Traced to fraudulent livestock markets and implies trapping animals. 'Reveal the secret' says the same thing more directly.
   'let the cat out of the bag': 'reveal the secret'
+  # let-the-cat-out-of-the-bag: Traced to fraudulent livestock markets and implies trapping animals. 'Reveal the secret' says the same thing more directly.
   'letting the cat out of the bag': 'reveal the secret'
+  # open-a-can-of-worms: References worms packaged as live bait to catch and kill fish. 'Open a difficult topic' or 'uncover hidden problems' is more precise.
   'open a can of worms': 'create a complicated situation'
+  # open-a-can-of-worms: References worms packaged as live bait to catch and kill fish. 'Open a difficult topic' or 'uncover hidden problems' is more precise.
   'opening a can of worms': 'create a complicated situation'
+  # open-a-can-of-worms: References worms packaged as live bait to catch and kill fish. 'Open a difficult topic' or 'uncover hidden problems' is more precise.
   'opened a can of worms': 'create a complicated situation'
+  # wild-goose-chase: Casts pursuing a living bird as a pointless annoyance. 'Futile search' or 'fool's errand' says the same thing without the hunting framing.
   'wild goose chase': 'futile search'
+  # shooting-fish-in-a-barrel: Mass-killing imagery used to mean 'easy.' 'Trivially easy' or 'a sure thing' says the same thing without it.
+  'shooting fish in a barrel': 'trivially easy'
+  # shooting-fish-in-a-barrel: Mass-killing imagery used to mean 'easy.' 'Trivially easy' or 'a sure thing' says the same thing without it.
+  'shoot fish in a barrel': 'trivially easy'
+  # shooting-fish-in-a-barrel: Mass-killing imagery used to mean 'easy.' 'Trivially easy' or 'a sure thing' says the same thing without it.
   'like shooting fish in a barrel': 'trivially easy'
+  # flog-a-dead-horse: Describes whipping an animal's corpse — the same image as 'beat a dead horse'. 'Belabor the point' is a direct replacement.
   'flog a dead horse': 'belabor the point'
+  # flog-a-dead-horse: Describes whipping an animal's corpse — the same image as 'beat a dead horse'. 'Belabor the point' is a direct replacement.
   'flogging a dead horse': 'belabor the point'
-  'there are bigger fish to fry': 'more important matters to address'
+  # bigger-fish-to-fry: Fish-as-food commodification for 'more important things.' 'More important matters' says the same thing.
+  'bigger fish to fry': 'more important matters to address'
+  # bigger-fish-to-fry: Fish-as-food commodification for 'more important things.' 'More important matters' says the same thing.
+  'other fish to fry': 'more important matters to address'
+  # guinea-pig: Refers to using guinea pigs as expendable test subjects in harmful experiments. 'Test subject' or 'early adopter' is more precise in technical contexts.
   'guinea pig': 'test subject'
-  'hold your horses': 'wait a moment'
-  'the elephant in the room': 'the obvious issue'
-  'straight from the horse''s mouth': 'directly from the source'
+  # bring-home-the-bacon: Describes slaughtered pig flesh as the fruit of success. 'Bring home the results' or 'earn a living' carries the same meaning.
   'bring home the bacon': 'bring home the results'
+  # bring-home-the-bacon: Describes slaughtered pig flesh as the fruit of success. 'Bring home the results' or 'earn a living' carries the same meaning.
   'bringing home the bacon': 'bring home the results'
+  # bring-home-the-bacon: Describes slaughtered pig flesh as the fruit of success. 'Bring home the results' or 'earn a living' carries the same meaning.
   'brought home the bacon': 'bring home the results'
+  # bring-home-the-bacon: Describes slaughtered pig flesh as the fruit of success. 'Bring home the results' or 'earn a living' carries the same meaning.
   'brings home the bacon': 'bring home the results'
-  'take the bull by the horns': 'face the challenge head-on'
-  'taking the bull by the horns': 'face the challenge head-on'
-  'took the bull by the horns': 'face the challenge head-on'
+  # take-the-bull-by-horns: Bullfighting/rodeo imagery. 'Tackle the problem directly' or 'face it head-on' is cleaner.
+  'take the bull by the horns': 'tackle the problem directly'
+  # take-the-bull-by-horns: Bullfighting/rodeo imagery. 'Tackle the problem directly' or 'face it head-on' is cleaner.
+  'took the bull by the horns': 'tackle the problem directly'
+  # take-the-bull-by-horns: Bullfighting/rodeo imagery. 'Tackle the problem directly' or 'face it head-on' is cleaner.
+  'taking the bull by the horns': 'tackle the problem directly'
+  # take-the-bull-by-horns: Bullfighting/rodeo imagery. 'Tackle the problem directly' or 'face it head-on' is cleaner.
+  'takes the bull by the horns': 'tackle the problem directly'
+  # lambs-to-slaughter: Direct slaughter imagery. 'Without resistance' or 'unknowingly walking into danger' captures the same meaning.
+  'lambs to the slaughter': 'without resistance'
+  # lambs-to-slaughter: Direct slaughter imagery. 'Without resistance' or 'unknowingly walking into danger' captures the same meaning.
+  'lamb to the slaughter': 'without resistance'
+  # lambs-to-slaughter: Direct slaughter imagery. 'Without resistance' or 'unknowingly walking into danger' captures the same meaning.
   'like lambs to the slaughter': 'without resistance'
-  'no room to swing a cat': 'very cramped'
+  # lambs-to-slaughter: Direct slaughter imagery. 'Without resistance' or 'unknowingly walking into danger' captures the same meaning.
+  'like a lamb to the slaughter': 'without resistance'
+  # no-room-to-swing-a-cat: Violent animal imagery for 'cramped.' 'Extremely tight space' says it directly.
+  'no room to swing a cat': 'extremely tight space'
+  # no-room-to-swing-a-cat: Violent animal imagery for 'cramped.' 'Extremely tight space' says it directly.
+  'not enough room to swing a cat': 'extremely tight space'
+  # red-herring: Originates from dead, smoked fish reportedly used to train hunting dogs. 'Distraction' or 'false lead' communicates the idea directly.
   'red herring': 'distraction'
+  # curiosity-killed-the-cat: A direct reference to killing a cat, used as a cautionary phrase. 'Curiosity backfired' or 'being nosy caused trouble' says the same thing.
   'curiosity killed the cat': 'curiosity backfired'
-  'like a chicken with its head cut off': 'in a panic'
+  # chicken-head-cut-off: Graphic slaughter imagery used to describe panic. 'In a panic' or 'like your hair is on fire' captures the same thing.
+  'like a chicken with its head cut off': 'like your hair is on fire'
+  # chicken-head-cut-off: Graphic slaughter imagery used to describe panic. 'In a panic' or 'like your hair is on fire' captures the same thing.
+  'like a chicken with their head cut off': 'like your hair is on fire'
+  # chicken-head-cut-off: Graphic slaughter imagery used to describe panic. 'In a panic' or 'like your hair is on fire' captures the same thing.
+  'running around like a chicken with its head cut off': 'like your hair is on fire'
+  # goose-is-cooked: Killing-and-cooking imagery used to mean someone is in trouble. 'You're in trouble' says it directly.
   'your goose is cooked': 'you''re in trouble'
+  # goose-is-cooked: Killing-and-cooking imagery used to mean someone is in trouble. 'You're in trouble' says it directly.
+  'their goose is cooked': 'you''re in trouble'
+  # goose-is-cooked: Killing-and-cooking imagery used to mean someone is in trouble. 'You're in trouble' says it directly.
+  'his goose is cooked': 'you''re in trouble'
+  # goose-is-cooked: Killing-and-cooking imagery used to mean someone is in trouble. 'You're in trouble' says it directly.
+  'her goose is cooked': 'you''re in trouble'
+  # goose-is-cooked: Killing-and-cooking imagery used to mean someone is in trouble. 'You're in trouble' says it directly.
+  'my goose is cooked': 'you''re in trouble'
+  # goose-is-cooked: Killing-and-cooking imagery used to mean someone is in trouble. 'You're in trouble' says it directly.
+  'our goose is cooked': 'you''re in trouble'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
   'throw someone to the wolves': 'abandon to criticism'
-  'throwing someone to the wolves': 'abandon to criticism'
-  'threw someone to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'thrown to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'throwing to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'threw to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'throw them to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'throw him to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'throw her to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'throw us to the wolves': 'abandon to criticism'
+  # throw-to-wolves: Frames a person as prey. 'Abandon to criticism' or 'leave exposed' carries the same meaning without the imagery.
+  'throw me to the wolves': 'abandon to criticism'
+  # hook-line-and-sinker: References the equipment used to hook and kill fish. 'Completely' or 'without question' conveys total buy-in without the fishing imagery.
   'hook, line, and sinker': 'completely'
-  'clip someone''s wings': 'restrict someone''s freedom'
-  'clipping someone''s wings': 'restrict someone''s freedom'
-  'clipped someone''s wings': 'restrict someone''s freedom'
-  'the straw that broke the camel''s back': 'the tipping point'
-  'a bird in the hand is worth two in the bush': 'a sure thing beats a possibility'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clip someone''s wings': 'restrict freedom'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clip their wings': 'restrict freedom'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clip his wings': 'restrict freedom'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clip her wings': 'restrict freedom'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clipped wings': 'restrict freedom'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clipping wings': 'restrict freedom'
+  # clip-wings: Wing-clipping is a real physical mutilation done to captive birds. 'Restrict freedom' or 'limit options' says the same thing directly.
+  'clips wings': 'restrict freedom'
+  # straw-that-broke-camels-back: Overloading a pack animal until its back breaks. 'Tipping point' or 'breaking point' carries the same meaning.
+  'straw that broke the camel''s back': 'tipping point'
+  # straw-that-broke-camels-back: Overloading a pack animal until its back breaks. 'Tipping point' or 'breaking point' carries the same meaning.
+  'last straw': 'tipping point'
+  # a-bird-in-the-hand: References trapping wild birds. 'A sure thing beats a possibility' carries the same meaning.
+  'a bird in the hand': 'a sure thing beats a possibility'
+  # a-bird-in-the-hand: References trapping wild birds. 'A sure thing beats a possibility' carries the same meaning.
+  'bird in the hand is worth': 'a sure thing beats a possibility'
+  # eat-crow: References eating a killed bird as humiliating punishment. 'Admit being wrong' or 'swallow one's pride' says the same thing directly.
   'eat crow': 'admit being wrong'
+  # eat-crow: References eating a killed bird as humiliating punishment. 'Admit being wrong' or 'swallow one's pride' says the same thing directly.
   'eating crow': 'admit being wrong'
+  # fight-like-cats-and-dogs: Animal-fighting imagery. 'Constantly argue' or 'clash frequently' says it directly.
   'fight like cats and dogs': 'constantly argue'
+  # fight-like-cats-and-dogs: Animal-fighting imagery. 'Constantly argue' or 'clash frequently' says it directly.
+  'fights like cats and dogs': 'constantly argue'
+  # fight-like-cats-and-dogs: Animal-fighting imagery. 'Constantly argue' or 'clash frequently' says it directly.
   'fighting like cats and dogs': 'constantly argue'
+  # fight-like-cats-and-dogs: Animal-fighting imagery. 'Constantly argue' or 'clash frequently' says it directly.
   'fought like cats and dogs': 'constantly argue'
+  # take-the-bait: References baiting hooks and traps to catch and kill animals. 'Fall for it' or 'be deceived' is more direct.
   'take the bait': 'fall for it'
+  # take-the-bait: References baiting hooks and traps to catch and kill animals. 'Fall for it' or 'be deceived' is more direct.
   'taking the bait': 'fall for it'
+  # take-the-bait: References baiting hooks and traps to catch and kill animals. 'Fall for it' or 'be deceived' is more direct.
   'took the bait': 'fall for it'
-  'don''t count your chickens before they hatch': 'don''t assume success prematurely'
+  # dont-count-your-chickens: Commodity framing of chickens as a yield to be counted. 'Don't assume success prematurely' says it directly.
+  'don''t count your chickens': 'don''t assume success prematurely'
+  # dont-count-your-chickens: Commodity framing of chickens as a yield to be counted. 'Don't assume success prematurely' says it directly.
+  'counting your chickens': 'don''t assume success prematurely'
+  # dont-count-your-chickens: Commodity framing of chickens as a yield to be counted. 'Don't assume success prematurely' says it directly.
+  'count your chickens before': 'don''t assume success prematurely'
+  # dont-be-a-chicken: Uses a chicken as an insult for cowardice. 'Don't hesitate' or 'be brave' is direct and doesn't rely on a demeaning stereotype.
   'don''t be a chicken': 'don''t hesitate'
-  'pig': 'resource-intensive'
-  'cowboy coding': 'undisciplined coding'
-  'code monkey': 'developer'
+  # badger-someone: Comes from badger-baiting, a blood sport where dogs were set on captive badgers. 'Pester' or 'pressure' carries the same meaning without the origin.
   'badger someone': 'pester'
+  # ferret-out: Refers to the historical use of ferrets to flush rabbits out of burrows to be killed. 'Uncover' or 'dig up' works just as well.
   'ferret out': 'uncover'
-  'cattle vs. pets': 'ephemeral vs. persistent'
-  'pet project': 'side project'
+  # canary-in-a-coal-mine: Refers to canaries historically placed in coal mines to die first as a warning to miners. 'Early warning signal' or 'sentinel' conveys the meaning without the harm.
   'canary in a coal mine': 'early warning signal'
-  'dogfooding': 'self-hosting'
-  'dogfood': 'self-hosting'
-  'eating your own dogfood': 'self-hosting'
-  'eat your own dogfood': 'self-hosting'
-  'herding cats': 'coordinating independent contributors'
-  'go on a fishing expedition': 'exploratory investigation'
+  # fishing-expedition: Frames speculative inquiry as fishing — the metaphor softens the catch. 'Exploratory investigation' is clearer, especially in legal writing.
+  'fishing expedition': 'exploratory investigation'
+  # fishing-expedition: Frames speculative inquiry as fishing — the metaphor softens the catch. 'Exploratory investigation' is clearer, especially in legal writing.
+  'fishing expeditions': 'exploratory investigation'
+  # sacred-cow: Treats cattle as objects in an 'untouchable' metaphor while also trivializing Hindu beliefs. 'Unquestioned belief' or 'protected assumption' avoids both issues.
   'sacred cow': 'unquestioned belief'
+  # sacred-cow: Treats cattle as objects in an 'untouchable' metaphor while also trivializing Hindu beliefs. 'Unquestioned belief' or 'protected assumption' avoids both issues.
   'sacred cows': 'unquestioned belief'
+  # scapegoat: Originates from the ritual sacrifice of goats to carry away blame. 'Blame target' or 'wrongly blamed' is more precise.
   'scapegoat': 'blame target'
+  # scapegoat: Originates from the ritual sacrifice of goats to carry away blame. 'Blame target' or 'wrongly blamed' is more precise.
   'scapegoated': 'blame target'
+  # scapegoat: Originates from the ritual sacrifice of goats to carry away blame. 'Blame target' or 'wrongly blamed' is more precise.
   'scapegoating': 'blame target'
-  'rat race': 'daily grind'
+  # dead-cat-bounce: A financial term built on the image of a dead cat. 'Temporary rebound' or 'false recovery' is more professional and avoids the image.
   'dead cat bounce': 'temporary rebound'
+  # dog-eat-dog: Frames dogs as inherently violent toward each other as a model for competition. 'Ruthlessly competitive' or 'cutthroat' conveys the meaning without the stereotype.
   'dog-eat-dog': 'ruthlessly competitive'
+  # dog-eat-dog: Frames dogs as inherently violent toward each other as a model for competition. 'Ruthlessly competitive' or 'cutthroat' conveys the meaning without the stereotype.
   'dog eat dog': 'ruthlessly competitive'
+  # whack-a-mole: References a game built around repeatedly striking animals as they pop up. 'Recurring problem' or 'endless loop' describes the pattern more precisely.
   'whack-a-mole': 'recurring problem'
+  # whack-a-mole: References a game built around repeatedly striking animals as they pop up. 'Recurring problem' or 'endless loop' describes the pattern more precisely.
   'whack a mole': 'recurring problem'
-  'cash cow': 'profit center'
-  'cash cows': 'profit center'
+  # sacrificial-lamb: References the ritual slaughter of lambs. 'Expendable person' or 'someone sacrificed for others' communicates the metaphor directly.
   'sacrificial lamb': 'expendable person'
+  # sacrificial-lamb: References the ritual slaughter of lambs. 'Expendable person' or 'someone sacrificed for others' communicates the metaphor directly.
   'sacrificial lambs': 'expendable person'
+  # sitting-duck: Hunting imagery — a duck in the open, easy to shoot. 'Easy target' or 'vulnerable target' says the same thing.
   'sitting duck': 'easy target'
+  # sitting-duck: Hunting imagery — a duck in the open, easy to shoot. 'Easy target' or 'vulnerable target' says the same thing.
   'sitting ducks': 'easy target'
+  # open-season: Refers to the legal hunting period when killing animals is permitted. 'Free-for-all' or 'no holds barred' conveys the meaning without the hunting framing.
   'open season': 'free-for-all'
+  # open-season: Refers to the legal hunting period when killing animals is permitted. 'Free-for-all' or 'no holds barred' conveys the meaning without the hunting framing.
   'opening season': 'free-for-all'
+  # open-season: Refers to the legal hunting period when killing animals is permitted. 'Free-for-all' or 'no holds barred' conveys the meaning without the hunting framing.
   'opened season': 'free-for-all'
-  'put out to pasture': 'retire'
+  # dead-duck: Hunting imagery — a duck that has been shot and killed. 'Lost cause' or 'doomed effort' is just as expressive.
   'dead duck': 'lost cause'
+  # dead-duck: Hunting imagery — a duck that has been shot and killed. 'Lost cause' or 'doomed effort' is just as expressive.
   'dead ducks': 'lost cause'
-  'kill process': 'terminate the process'
-  'killing process': 'terminate the process'
-  'killed process': 'terminate the process'
-  'kill the server': 'stop the server'
-  'killing the server': 'stop the server'
-  'killed the server': 'stop the server'
-  'nuke': 'delete completely'
-  'abort': 'cancel'
+  # cull: Euphemism used in wildlife management and farming for mass killing. 'Remove', 'prune', 'trim', or 'filter out' is accurate in technical contexts.
   'cull': 'remove'
-  'master/slave': 'primary/replica'
-  'whitelist/blacklist': 'allowlist/denylist'
-  'grandfathered': 'legacy'
+  # lame-duck: Combines an ableist adjective with a reference to a bird unable to fly due to injury. 'Outgoing', 'transitional', or 'ineffective' is more precise.
   'lame duck': 'outgoing'
+  # lame-duck: Combines an ableist adjective with a reference to a bird unable to fly due to injury. 'Outgoing', 'transitional', or 'ineffective' is more precise.
   'lame-duck': 'outgoing'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'feed to the lions': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'fed to the lions': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'feeding to the lions': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'feed to the sharks': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'fed to the sharks': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'feeding to the sharks': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'feed to the dogs': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'fed to the dogs': 'sacrifice'
+  # feed-to-predators: Human-as-prey imagery. 'Sacrifice' or 'leave exposed' captures the same meaning.
+  'feeding to the dogs': 'sacrifice'
+  # pig-to-slaughter: Direct slaughter imagery. 'Defenseless' or 'walking into disaster' captures the same meaning.
+  'like a pig to slaughter': 'defenseless'
+  # pig-to-slaughter: Direct slaughter imagery. 'Defenseless' or 'walking into disaster' captures the same meaning.
+  'pigs to slaughter': 'defenseless'
+  # pig-to-slaughter: Direct slaughter imagery. 'Defenseless' or 'walking into disaster' captures the same meaning.
+  'like pigs to slaughter': 'defenseless'
+  # turkey-shoot: One-sided-slaughter imagery for an easy win. 'Walkover' or 'trivially easy win' carries the same meaning.
+  'turkey shoot': 'trivially easy win'
+  # turkey-shoot: One-sided-slaughter imagery for an easy win. 'Walkover' or 'trivially easy win' carries the same meaning.
+  'turkey-shoot': 'trivially easy win'
+  # fox-guarding-henhouse: Frames predation as an inevitable natural order. 'Conflict of interest' or 'wrong person in charge' is the actual point being made.
+  'fox guarding the henhouse': 'conflict of interest'
+  # fox-guarding-henhouse: Frames predation as an inevitable natural order. 'Conflict of interest' or 'wrong person in charge' is the actual point being made.
+  'fox in the henhouse': 'conflict of interest'
+  # fox-guarding-henhouse: Frames predation as an inevitable natural order. 'Conflict of interest' or 'wrong person in charge' is the actual point being made.
+  'foxes guarding the henhouse': 'conflict of interest'
+  # fox-guarding-henhouse: Frames predation as an inevitable natural order. 'Conflict of interest' or 'wrong person in charge' is the actual point being made.
+  'fox guarding the hen house': 'conflict of interest'
+  # bull-in-china-shop: Bull-as-clumsy-brute stereotype — actually originates from a cartoon, not reality. 'Clumsy disruption' or 'careless and destructive' is more accurate.
+  'bull in a china shop': 'tornado in a glass factory'
+  # bull-in-china-shop: Bull-as-clumsy-brute stereotype — actually originates from a cartoon, not reality. 'Clumsy disruption' or 'careless and destructive' is more accurate.
+  'like a bull in a china shop': 'tornado in a glass factory'
+  # build-a-better-mousetrap: Mouse-killing device as innovation metaphor. 'Invent something better' or 'build a better mouse pad' captures the idea.
+  'build a better mousetrap': 'build a better mouse pad'
+  # build-a-better-mousetrap: Mouse-killing device as innovation metaphor. 'Invent something better' or 'build a better mouse pad' captures the idea.
+  'better mousetrap': 'build a better mouse pad'
+  # build-a-better-mousetrap: Mouse-killing device as innovation metaphor. 'Invent something better' or 'build a better mouse pad' captures the idea.
+  'builds a better mousetrap': 'build a better mouse pad'
+  # build-a-better-mousetrap: Mouse-killing device as innovation metaphor. 'Invent something better' or 'build a better mouse pad' captures the idea.
+  'building a better mousetrap': 'build a better mouse pad'
+  # packed-like-sardines: Accurately describes industrial fishing and canning — the 'imagery' is the reality. 'Tightly crowded' or 'packed in like pickles' works without invoking it.
+  'packed in like sardines': 'packed in like pickles'
+  # packed-like-sardines: Accurately describes industrial fishing and canning — the 'imagery' is the reality. 'Tightly crowded' or 'packed in like pickles' works without invoking it.
+  'packed like sardines': 'packed in like pickles'
+  # packed-like-sardines: Accurately describes industrial fishing and canning — the 'imagery' is the reality. 'Tightly crowded' or 'packed in like pickles' works without invoking it.
+  'squeezed in like sardines': 'packed in like pickles'
+  # pull-the-wool: Wool (sheep exploitation) as a deception metaphor. 'Deceive' or 'mislead' is direct and clearer.
+  'pull the wool over': 'deceive'
+  # pull-the-wool: Wool (sheep exploitation) as a deception metaphor. 'Deceive' or 'mislead' is direct and clearer.
+  'pulled the wool over': 'deceive'
+  # pull-the-wool: Wool (sheep exploitation) as a deception metaphor. 'Deceive' or 'mislead' is direct and clearer.
+  'pulling the wool over': 'deceive'
+  # pull-the-wool: Wool (sheep exploitation) as a deception metaphor. 'Deceive' or 'mislead' is direct and clearer.
+  'pulls the wool over': 'deceive'
+  # lipstick-on-a-pig: Frames pigs as ugly objects. 'Superficially improve' or 'disguise the flaw' is the actual meaning.
+  'lipstick on a pig': 'superficially improve'
+  # lipstick-on-a-pig: Frames pigs as ugly objects. 'Superficially improve' or 'disguise the flaw' is the actual meaning.
+  'put lipstick on a pig': 'superficially improve'
+  # lipstick-on-a-pig: Frames pigs as ugly objects. 'Superficially improve' or 'disguise the flaw' is the actual meaning.
+  'putting lipstick on a pig': 'superficially improve'
+  # lipstick-on-a-pig: Frames pigs as ugly objects. 'Superficially improve' or 'disguise the flaw' is the actual meaning.
+  'puts lipstick on a pig': 'superficially improve'
+  # silk-purse-sows-ear: Pig body parts framed as worthless. 'Transform something unpromising' carries the same meaning.
+  'silk purse out of a sow''s ear': 'diamond bracelet out of a lump of coal'
+  # silk-purse-sows-ear: Pig body parts framed as worthless. 'Transform something unpromising' carries the same meaning.
+  'silk purse from a sow''s ear': 'diamond bracelet out of a lump of coal'
+  # silk-purse-sows-ear: Pig body parts framed as worthless. 'Transform something unpromising' carries the same meaning.
+  'make a silk purse out of a sow''s ear': 'diamond bracelet out of a lump of coal'
+  # black-sheep: Commodifies sheep coat color as a family-shame metaphor, with racial baggage. 'Outlier' or 'odd one out' works.
+  'black sheep': 'outlier'
+  # wolf-in-sheeps-clothing: Wolves-as-deceivers trope. 'Hidden threat' or 'deceiver in disguise' carries the same meaning.
+  'wolf in sheep''s clothing': 'deceiver in disguise'
+  # wolf-in-sheeps-clothing: Wolves-as-deceivers trope. 'Hidden threat' or 'deceiver in disguise' carries the same meaning.
+  'wolves in sheep''s clothing': 'deceiver in disguise'
+  # wolf-in-sheeps-clothing: Wolves-as-deceivers trope. 'Hidden threat' or 'deceiver in disguise' carries the same meaning.
+  'wolf in sheeps clothing': 'deceiver in disguise'
+  # chicken-out: Chicken-as-coward framing. 'Back out' or 'lose nerve' carries the same meaning.
+  'chicken out': 'back out'
+  # chicken-out: Chicken-as-coward framing. 'Back out' or 'lose nerve' carries the same meaning.
+  'chickened out': 'back out'
+  # chicken-out: Chicken-as-coward framing. 'Back out' or 'lose nerve' carries the same meaning.
+  'chickening out': 'back out'
+  # chicken-out: Chicken-as-coward framing. 'Back out' or 'lose nerve' carries the same meaning.
+  'chickens out': 'back out'
+  # feeding-frenzy: Shark-predation imagery used for human behavior. 'Chaotic rush' or 'scramble to exploit' carries the same meaning.
+  'feeding frenzy': 'chaotic rush'
+  # feeding-frenzy: Shark-predation imagery used for human behavior. 'Chaotic rush' or 'scramble to exploit' carries the same meaning.
+  'feeding frenzies': 'chaotic rush'
+  # blood-in-the-water: Shark-predation imagery. 'Signs of weakness' or 'vulnerability visible' carries the same meaning.
+  'blood in the water': 'signs of weakness'
+  # blood-in-the-water: Shark-predation imagery. 'Signs of weakness' or 'vulnerability visible' carries the same meaning.
+  'smell blood in the water': 'signs of weakness'
+  # blood-in-the-water: Shark-predation imagery. 'Signs of weakness' or 'vulnerability visible' carries the same meaning.
+  'smells blood in the water': 'signs of weakness'
+  # circling-vultures: Species defamation — the 'circling vulture' framing is factually wrong (vultures are ecological cleaners, not predators) and has driven real persecution; vulture populations are crashing globally. 'Waiting to exploit' carries the same meaning.
+  'circling like vultures': 'waiting to exploit'
+  # circling-vultures: Species defamation — the 'circling vulture' framing is factually wrong (vultures are ecological cleaners, not predators) and has driven real persecution; vulture populations are crashing globally. 'Waiting to exploit' carries the same meaning.
+  'circle like vultures': 'waiting to exploit'
+  # circling-vultures: Species defamation — the 'circling vulture' framing is factually wrong (vultures are ecological cleaners, not predators) and has driven real persecution; vulture populations are crashing globally. 'Waiting to exploit' carries the same meaning.
+  'circling vultures': 'waiting to exploit'
+  # circling-vultures: Species defamation — the 'circling vulture' framing is factually wrong (vultures are ecological cleaners, not predators) and has driven real persecution; vulture populations are crashing globally. 'Waiting to exploit' carries the same meaning.
+  'vultures circling': 'waiting to exploit'
+  # madder-than-wet-hen: References the farm practice of dunking broody hens in water to break their nesting instinct. 'Furious' or 'livid' says it directly.
+  'madder than a wet hen': 'furious'
+  # madder-than-wet-hen: References the farm practice of dunking broody hens in water to break their nesting instinct. 'Furious' or 'livid' says it directly.
+  'mad as a wet hen': 'furious'
+  # code-monkey: Frames programmers as trained animals, and compounds with the long history of 'monkey' used as a racial slur. 'Developer' or 'engineer' is the accurate term.
+  'code monkey': 'developer'
+  # code-monkey: Frames programmers as trained animals, and compounds with the long history of 'monkey' used as a racial slur. 'Developer' or 'engineer' is the accurate term.
+  'code monkeys': 'developer'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'memory hog': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'CPU hog': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'bandwidth hog': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'resource hog': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'disk hog': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'space hog': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hogging memory': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hogging CPU': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hogging bandwidth': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hogging resources': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hogging the': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hogs the': 'resource-intensive'
+  # hog-resource: Builds on the pig-as-greedy stereotype (pigs are actually selective eaters). 'Resource-intensive' or 'monopolizes' is more accurate and avoids the framing.
+  'hog the spotlight': 'resource-intensive'
+  # pigheaded: Pig-as-stubborn stereotype (pigs are intelligent, not stubborn). 'Obstinate' or 'unreasonable' says it directly.
+  'pigheaded': 'obstinate'
+  # pigheaded: Pig-as-stubborn stereotype (pigs are intelligent, not stubborn). 'Obstinate' or 'unreasonable' says it directly.
+  'pig-headed': 'obstinate'
+  # pigheaded: Pig-as-stubborn stereotype (pigs are intelligent, not stubborn). 'Obstinate' or 'unreasonable' says it directly.
+  'pigheadedness': 'obstinate'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'eat like a pig': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'eats like a pig': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'eating like a pig': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'ate like a pig': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'pig out': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'pigged out': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'pigging out': 'overeat'
+  # eat-like-a-pig: Pig-as-glutton stereotype (actually wrong — pigs are selective eaters in natural conditions). 'Overeat' or 'gorge' says the same thing.
+  'pigs out': 'overeat'
+  # son-of-a-bitch: Female-dog insult that compounds misogyny with species defamation. A specific descriptor is clearer and doesn't land on anyone's mother or on dogs.
+  'son of a bitch': 'specific descriptor'
+  # son-of-a-bitch: Female-dog insult that compounds misogyny with species defamation. A specific descriptor is clearer and doesn't land on anyone's mother or on dogs.
+  'sons of bitches': 'specific descriptor'
+  # son-of-a-bitch: Female-dog insult that compounds misogyny with species defamation. A specific descriptor is clearer and doesn't land on anyone's mother or on dogs.
+  'son-of-a-bitch': 'specific descriptor'
+  # sheeple: Coined term meaning 'sheep-people' — dehumanizes the target while defaming sheep (who are actually complex social animals). 'Conformists' or 'uncritical crowd' carries the same meaning.
+  'sheeple': 'conformists'
+  # loan-shark: Species-as-predator trope applied to exploitative humans, which misrepresents sharks and provides a convenient framing for financial harm. 'Predatory lender' or 'hustler' is direct and more accurate.
+  'loan shark': 'predatory lender'
+  # loan-shark: Species-as-predator trope applied to exploitative humans, which misrepresents sharks and provides a convenient framing for financial harm. 'Predatory lender' or 'hustler' is direct and more accurate.
+  'loan sharks': 'predatory lender'
+  # loan-shark: Species-as-predator trope applied to exploitative humans, which misrepresents sharks and provides a convenient framing for financial harm. 'Predatory lender' or 'hustler' is direct and more accurate.
+  'loan-shark': 'predatory lender'
+  # loan-shark: Species-as-predator trope applied to exploitative humans, which misrepresents sharks and provides a convenient framing for financial harm. 'Predatory lender' or 'hustler' is direct and more accurate.
+  'card shark': 'predatory lender'
+  # loan-shark: Species-as-predator trope applied to exploitative humans, which misrepresents sharks and provides a convenient framing for financial harm. 'Predatory lender' or 'hustler' is direct and more accurate.
+  'card sharks': 'predatory lender'
+  # vulture-capitalist: Species defamation that drives real-world vulture persecution — global vulture populations are crashing largely from this kind of cultural framing. 'Predatory investor' names the behavior without defaming an ecologically critical species.
+  'vulture capitalist': 'predatory investor'
+  # vulture-capitalist: Species defamation that drives real-world vulture persecution — global vulture populations are crashing largely from this kind of cultural framing. 'Predatory investor' names the behavior without defaming an ecologically critical species.
+  'vulture capitalists': 'predatory investor'
+  # vulture-capitalist: Species defamation that drives real-world vulture persecution — global vulture populations are crashing largely from this kind of cultural framing. 'Predatory investor' names the behavior without defaming an ecologically critical species.
+  'vulture capitalism': 'predatory investor'
+  # vulture-capitalist: Species defamation that drives real-world vulture persecution — global vulture populations are crashing largely from this kind of cultural framing. 'Predatory investor' names the behavior without defaming an ecologically critical species.
+  'vulture fund': 'predatory investor'
+  # vulture-capitalist: Species defamation that drives real-world vulture persecution — global vulture populations are crashing largely from this kind of cultural framing. 'Predatory investor' names the behavior without defaming an ecologically critical species.
+  'vulture funds': 'predatory investor'
+  # weasel-words: Species-as-deceitful trope. 'Evasive language' or 'slippery phrasing' is more direct. (Wikipedia's Manual of Style uses 'weasel words' as an internal term of art; that context is suppressed.)
+  'weasel words': 'evasive language'
+  # weasel-words: Species-as-deceitful trope. 'Evasive language' or 'slippery phrasing' is more direct. (Wikipedia's Manual of Style uses 'weasel words' as an internal term of art; that context is suppressed.)
+  'weasel word': 'evasive language'
+  # weasel-words: Species-as-deceitful trope. 'Evasive language' or 'slippery phrasing' is more direct. (Wikipedia's Manual of Style uses 'weasel words' as an internal term of art; that context is suppressed.)
+  'weasel out': 'evasive language'
+  # weasel-words: Species-as-deceitful trope. 'Evasive language' or 'slippery phrasing' is more direct. (Wikipedia's Manual of Style uses 'weasel words' as an internal term of art; that context is suppressed.)
+  'weaseled out': 'evasive language'
+  # weasel-words: Species-as-deceitful trope. 'Evasive language' or 'slippery phrasing' is more direct. (Wikipedia's Manual of Style uses 'weasel words' as an internal term of art; that context is suppressed.)
+  'weaseling out': 'evasive language'
+  # weasel-words: Species-as-deceitful trope. 'Evasive language' or 'slippery phrasing' is more direct. (Wikipedia's Manual of Style uses 'weasel words' as an internal term of art; that context is suppressed.)
+  'weasels out': 'evasive language'
+  # leech-off: Species-as-parasite trope. 'Freeload' or 'mooch' is direct. (Bare 'leech' in medical contexts — leeches are still used in some surgeries — is not flagged.)
+  'leech off': 'freeload'
+  # leech-off: Species-as-parasite trope. 'Freeload' or 'mooch' is direct. (Bare 'leech' in medical contexts — leeches are still used in some surgeries — is not flagged.)
+  'leeching off': 'freeload'
+  # leech-off: Species-as-parasite trope. 'Freeload' or 'mooch' is direct. (Bare 'leech' in medical contexts — leeches are still used in some surgeries — is not flagged.)
+  'leeched off': 'freeload'
+  # leech-off: Species-as-parasite trope. 'Freeload' or 'mooch' is direct. (Bare 'leech' in medical contexts — leeches are still used in some surgeries — is not flagged.)
+  'leeches off': 'freeload'
+  # leech-off: Species-as-parasite trope. 'Freeload' or 'mooch' is direct. (Bare 'leech' in medical contexts — leeches are still used in some surgeries — is not flagged.)
+  'bloodsucker': 'freeload'
+  # leech-off: Species-as-parasite trope. 'Freeload' or 'mooch' is direct. (Bare 'leech' in medical contexts — leeches are still used in some surgeries — is not flagged.)
+  'bloodsuckers': 'freeload'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'monkey business': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'monkey around': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'monkeys around': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'monkeying around': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'monkeyed around': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'make a monkey of': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'made a monkey of': 'mischief'
+  # monkey-business: Primate-as-foolish stereotype with a long racial history. 'Mischief' or 'fool around' is direct and doesn't carry the baggage.
+  'making a monkey of': 'mischief'
+  # not-my-monkeys: Direct reference to circus-animal exploitation. 'Not my problem' carries the same meaning.
+  'not my circus, not my monkeys': 'not my problem'
+  # not-my-monkeys: Direct reference to circus-animal exploitation. 'Not my problem' carries the same meaning.
+  'not my circus not my monkeys': 'not my problem'
+  # not-my-monkeys: Direct reference to circus-animal exploitation. 'Not my problem' carries the same meaning.
+  'not my monkeys': 'not my problem'
+  # not-my-monkeys: Direct reference to circus-animal exploitation. 'Not my problem' carries the same meaning.
+  'not my circus': 'not my problem'
+  # bird-brain: Bird-as-stupid stereotype (corvids and parrots rank among the most cognitively sophisticated non-human animals). 'Forgetful' or 'absent-minded' is more accurate.
+  'bird brain': 'forgetful'
+  # bird-brain: Bird-as-stupid stereotype (corvids and parrots rank among the most cognitively sophisticated non-human animals). 'Forgetful' or 'absent-minded' is more accurate.
+  'bird-brain': 'forgetful'
+  # bird-brain: Bird-as-stupid stereotype (corvids and parrots rank among the most cognitively sophisticated non-human animals). 'Forgetful' or 'absent-minded' is more accurate.
+  'birdbrain': 'forgetful'
+  # bird-brain: Bird-as-stupid stereotype (corvids and parrots rank among the most cognitively sophisticated non-human animals). 'Forgetful' or 'absent-minded' is more accurate.
+  'bird brained': 'forgetful'
+  # bird-brain: Bird-as-stupid stereotype (corvids and parrots rank among the most cognitively sophisticated non-human animals). 'Forgetful' or 'absent-minded' is more accurate.
+  'bird-brained': 'forgetful'
+  # bird-brain: Bird-as-stupid stereotype (corvids and parrots rank among the most cognitively sophisticated non-human animals). 'Forgetful' or 'absent-minded' is more accurate.
+  'birdbrained': 'forgetful'
+  # thin-the-herd: Culling euphemism that softens 'kill off selected animals.' 'Kill off' says it directly.
+  'thin the herd': 'reduce numbers by killing'
+  # thin-the-herd: Culling euphemism that softens 'kill off selected animals.' 'Kill off' says it directly.
+  'thinning the herd': 'reduce numbers by killing'
+  # thin-the-herd: Culling euphemism that softens 'kill off selected animals.' 'Kill off' says it directly.
+  'thinned the herd': 'reduce numbers by killing'
+  # thin-the-herd: Culling euphemism that softens 'kill off selected animals.' 'Kill off' says it directly.
+  'thin out the herd': 'reduce numbers by killing'
+  # cry-wolf: Rooted in Aesop's fable, the phrase reinforces the wolf-as-menace framing that has driven centuries of wolf persecution. 'Raise false alarms' captures the meaning.
+  'cry wolf': 'raise false alarms'
+  # cry-wolf: Rooted in Aesop's fable, the phrase reinforces the wolf-as-menace framing that has driven centuries of wolf persecution. 'Raise false alarms' captures the meaning.
+  'cried wolf': 'raise false alarms'
+  # cry-wolf: Rooted in Aesop's fable, the phrase reinforces the wolf-as-menace framing that has driven centuries of wolf persecution. 'Raise false alarms' captures the meaning.
+  'crying wolf': 'raise false alarms'
+  # cry-wolf: Rooted in Aesop's fable, the phrase reinforces the wolf-as-menace framing that has driven centuries of wolf persecution. 'Raise false alarms' captures the meaning.
+  'cries wolf': 'raise false alarms'
+  # pecking-order: Derived from the actual behavior of hens in confinement, where crowding causes injurious pecking. 'Hierarchy' or 'chain of command' captures the same idea.
+  'pecking order': 'hierarchy'
+  # pecking-order: Derived from the actual behavior of hens in confinement, where crowding causes injurious pecking. 'Hierarchy' or 'chain of command' captures the same idea.
+  'pecking orders': 'hierarchy'
+  # play-cat-and-mouse: Predator-prey torture metaphor — the game is about prolonging the suffering. 'Drawn-out pursuit' captures the meaning.
+  'play cat and mouse': 'drawn-out pursuit'
+  # play-cat-and-mouse: Predator-prey torture metaphor — the game is about prolonging the suffering. 'Drawn-out pursuit' captures the meaning.
+  'playing cat and mouse': 'drawn-out pursuit'
+  # play-cat-and-mouse: Predator-prey torture metaphor — the game is about prolonging the suffering. 'Drawn-out pursuit' captures the meaning.
+  'played cat and mouse': 'drawn-out pursuit'
+  # play-cat-and-mouse: Predator-prey torture metaphor — the game is about prolonging the suffering. 'Drawn-out pursuit' captures the meaning.
+  'cat and mouse game': 'drawn-out pursuit'
+  # play-cat-and-mouse: Predator-prey torture metaphor — the game is about prolonging the suffering. 'Drawn-out pursuit' captures the meaning.
+  'game of cat and mouse': 'drawn-out pursuit'
+  # cat-who-swallowed-canary: Predation imagery — a dead canary is the joke's punchline. 'Smug with secret knowledge' captures it.
+  'cat that swallowed the canary': 'smug with secret knowledge'
+  # cat-who-swallowed-canary: Predation imagery — a dead canary is the joke's punchline. 'Smug with secret knowledge' captures it.
+  'cat who swallowed the canary': 'smug with secret knowledge'
+  # cat-who-swallowed-canary: Predation imagery — a dead canary is the joke's punchline. 'Smug with secret knowledge' captures it.
+  'cat that ate the canary': 'smug with secret knowledge'
+  # cat-who-swallowed-canary: Predation imagery — a dead canary is the joke's punchline. 'Smug with secret knowledge' captures it.
+  'cat who ate the canary': 'smug with secret knowledge'
+  # cat-who-swallowed-canary: Predation imagery — a dead canary is the joke's punchline. 'Smug with secret knowledge' captures it.
+  'canary-eating grin': 'smug with secret knowledge'
+  # chomping-at-the-bit: References the metal 'bit' forced into a horse's mouth; the phrase describes the horse's attempt to relieve it. 'Eager to start' says the same thing.
+  'chomping at the bit': 'eager to start'
+  # chomping-at-the-bit: References the metal 'bit' forced into a horse's mouth; the phrase describes the horse's attempt to relieve it. 'Eager to start' says the same thing.
+  'champing at the bit': 'eager to start'
+  # chomping-at-the-bit: References the metal 'bit' forced into a horse's mouth; the phrase describes the horse's attempt to relieve it. 'Eager to start' says the same thing.
+  'chomps at the bit': 'eager to start'
+  # chomping-at-the-bit: References the metal 'bit' forced into a horse's mouth; the phrase describes the horse's attempt to relieve it. 'Eager to start' says the same thing.
+  'champs at the bit': 'eager to start'
+  # whip-into-shape: Whip-violence imagery from animal training. 'Get organized' or 'restore order' is direct. (Political 'whip' and culinary 'whip' — different usage — are suppressed.)
+  'whip into shape': 'get organized'
+  # whip-into-shape: Whip-violence imagery from animal training. 'Get organized' or 'restore order' is direct. (Political 'whip' and culinary 'whip' — different usage — are suppressed.)
+  'whipped into shape': 'get organized'
+  # whip-into-shape: Whip-violence imagery from animal training. 'Get organized' or 'restore order' is direct. (Political 'whip' and culinary 'whip' — different usage — are suppressed.)
+  'whipping into shape': 'get organized'
+  # whip-into-shape: Whip-violence imagery from animal training. 'Get organized' or 'restore order' is direct. (Political 'whip' and culinary 'whip' — different usage — are suppressed.)
+  'whips into shape': 'get organized'
+  # whale-on: Whaling (whale slaughter) as metaphor for repeated hitting. 'Pummel' or 'hammer' is direct.
+  'whale on': 'pummel'
+  # whale-on: Whaling (whale slaughter) as metaphor for repeated hitting. 'Pummel' or 'hammer' is direct.
+  'whaling on': 'pummel'
+  # whale-on: Whaling (whale slaughter) as metaphor for repeated hitting. 'Pummel' or 'hammer' is direct.
+  'whaled on': 'pummel'
+  # whale-on: Whaling (whale slaughter) as metaphor for repeated hitting. 'Pummel' or 'hammer' is direct.
+  'whales on': 'pummel'
+  # fish-or-cut-bait: Fishing imagery. 'Decide' or 'commit or move on' is direct.
+  'fish or cut bait': 'decide'
+  # pull-rabbit-out-of-hat: Stage magic often uses live rabbits kept in distressing conditions. 'Magically solve' or 'produce unexpectedly' carries the meaning without referencing the practice.
+  'pull a rabbit out of a hat': 'pull a coin out of an ear'
+  # pull-rabbit-out-of-hat: Stage magic often uses live rabbits kept in distressing conditions. 'Magically solve' or 'produce unexpectedly' carries the meaning without referencing the practice.
+  'pulled a rabbit out of a hat': 'pull a coin out of an ear'
+  # pull-rabbit-out-of-hat: Stage magic often uses live rabbits kept in distressing conditions. 'Magically solve' or 'produce unexpectedly' carries the meaning without referencing the practice.
+  'pulling a rabbit out of a hat': 'pull a coin out of an ear'
+  # pull-rabbit-out-of-hat: Stage magic often uses live rabbits kept in distressing conditions. 'Magically solve' or 'produce unexpectedly' carries the meaning without referencing the practice.
+  'pulls a rabbit out of a hat': 'pull a coin out of an ear'
+  # walking-on-eggshells: Commodifies eggs as fragile objects; erases the laying-hen origin. 'Walking on thin ice' carries the same meaning.
+  'walking on eggshells': 'walking on thin ice'
+  # walking-on-eggshells: Commodifies eggs as fragile objects; erases the laying-hen origin. 'Walking on thin ice' carries the same meaning.
+  'walk on eggshells': 'walking on thin ice'
+  # walking-on-eggshells: Commodifies eggs as fragile objects; erases the laying-hen origin. 'Walking on thin ice' carries the same meaning.
+  'walks on eggshells': 'walking on thin ice'
+  # walking-on-eggshells: Commodifies eggs as fragile objects; erases the laying-hen origin. 'Walking on thin ice' carries the same meaning.
+  'walked on eggshells': 'walking on thin ice'
+  # put-a-horse-out-of-misery: Horse-killing idiom. 'End the suffering' carries the same meaning without the imagery.
+  'put a horse out of its misery': 'end the suffering'
+  # put-a-horse-out-of-misery: Horse-killing idiom. 'End the suffering' carries the same meaning without the imagery.
+  'put the horse out of its misery': 'end the suffering'
+  # put-a-horse-out-of-misery: Horse-killing idiom. 'End the suffering' carries the same meaning without the imagery.
+  'put it out of its misery': 'end the suffering'
+  # put-a-horse-out-of-misery: Horse-killing idiom. 'End the suffering' carries the same meaning without the imagery.
+  'put out of its misery': 'end the suffering'
+  # put-a-horse-out-of-misery: Horse-killing idiom. 'End the suffering' carries the same meaning without the imagery.
+  'put out of their misery': 'end the suffering'
+  # kill-the-fatted-calf: Biblical animal-sacrifice imagery (Luke 15 — the Prodigal Son). 'Celebrate grandly' or 'roll out the red carpet' carries the same meaning.
+  'kill the fatted calf': 'celebrate grandly'
+  # kill-the-fatted-calf: Biblical animal-sacrifice imagery (Luke 15 — the Prodigal Son). 'Celebrate grandly' or 'roll out the red carpet' carries the same meaning.
+  'killing the fatted calf': 'celebrate grandly'
+  # lemming-investor: Based on a Disney hoax — the 1958 'White Wilderness' staged lemmings being driven off a cliff. Lemmings don't mass-suicide. The metaphor defames the species and misleads the reader.
+  'acting like lemmings': 'herd-following investor'
+  # lemming-investor: Based on a Disney hoax — the 1958 'White Wilderness' staged lemmings being driven off a cliff. Lemmings don't mass-suicide. The metaphor defames the species and misleads the reader.
+  'lemming investor': 'herd-following investor'
+  # lemming-investor: Based on a Disney hoax — the 1958 'White Wilderness' staged lemmings being driven off a cliff. Lemmings don't mass-suicide. The metaphor defames the species and misleads the reader.
+  'lemming investors': 'herd-following investor'
+  # lemming-investor: Based on a Disney hoax — the 1958 'White Wilderness' staged lemmings being driven off a cliff. Lemmings don't mass-suicide. The metaphor defames the species and misleads the reader.
+  'lemming behavior': 'herd-following investor'
+  # lemming-investor: Based on a Disney hoax — the 1958 'White Wilderness' staged lemmings being driven off a cliff. Lemmings don't mass-suicide. The metaphor defames the species and misleads the reader.
+  'like lemmings': 'herd-following investor'
+  # maggot-insult: Degrading insect insult. Most uses in documentation are quoting dialogue or user-generated content; otherwise, use a specific descriptor.
+  'you maggot': 'specific descriptor'
+  # maggot-insult: Degrading insect insult. Most uses in documentation are quoting dialogue or user-generated content; otherwise, use a specific descriptor.
+  'little maggot': 'specific descriptor'
+  # maggot-insult: Degrading insect insult. Most uses in documentation are quoting dialogue or user-generated content; otherwise, use a specific descriptor.
+  'filthy maggot': 'specific descriptor'
+  # maggot-insult: Degrading insect insult. Most uses in documentation are quoting dialogue or user-generated content; otherwise, use a specific descriptor.
+  'dirty maggot': 'specific descriptor'
+  # swine-pejorative: Pig-as-degraded pejorative. Naming the actual trait (greedy, exploitative, corrupt) is clearer. (Bare 'swine' in medical contexts like 'swine flu' is not flagged.)
+  'filthy swine': 'specific descriptor'
+  # swine-pejorative: Pig-as-degraded pejorative. Naming the actual trait (greedy, exploitative, corrupt) is clearer. (Bare 'swine' in medical contexts like 'swine flu' is not flagged.)
+  'dirty swine': 'specific descriptor'
+  # swine-pejorative: Pig-as-degraded pejorative. Naming the actual trait (greedy, exploitative, corrupt) is clearer. (Bare 'swine' in medical contexts like 'swine flu' is not flagged.)
+  'you swine': 'specific descriptor'
+  # swine-pejorative: Pig-as-degraded pejorative. Naming the actual trait (greedy, exploitative, corrupt) is clearer. (Bare 'swine' in medical contexts like 'swine flu' is not flagged.)
+  'capitalist swine': 'specific descriptor'
+  # swine-pejorative: Pig-as-degraded pejorative. Naming the actual trait (greedy, exploitative, corrupt) is clearer. (Bare 'swine' in medical contexts like 'swine flu' is not flagged.)
+  'fascist swine': 'specific descriptor'
+  # cat-fight: Gendered insult — almost exclusively applied to women arguing, framing them as cats fighting. 'Heated argument' or 'altercation' is neutral.
+  'cat fight': 'heated argument'
+  # cat-fight: Gendered insult — almost exclusively applied to women arguing, framing them as cats fighting. 'Heated argument' or 'altercation' is neutral.
+  'catfight': 'heated argument'
+  # cat-fight: Gendered insult — almost exclusively applied to women arguing, framing them as cats fighting. 'Heated argument' or 'altercation' is neutral.
+  'cat-fight': 'heated argument'
+  # cat-fight: Gendered insult — almost exclusively applied to women arguing, framing them as cats fighting. 'Heated argument' or 'altercation' is neutral.
+  'cat fights': 'heated argument'
+  # cat-fight: Gendered insult — almost exclusively applied to women arguing, framing them as cats fighting. 'Heated argument' or 'altercation' is neutral.
+  'catfights': 'heated argument'
+  # humans-and-animals: False dichotomy — humans ARE animals. The phrasing reproduces the speciesist framing animal-liberation writing opposes. 'Humans and other animals' preserves the meaning accurately.
+  'humans and animals': 'humans and non-human animals'
+  # humans-and-animals: False dichotomy — humans ARE animals. The phrasing reproduces the speciesist framing animal-liberation writing opposes. 'Humans and other animals' preserves the meaning accurately.
+  'animals and humans': 'humans and non-human animals'
+  # humans-and-animals: False dichotomy — humans ARE animals. The phrasing reproduces the speciesist framing animal-liberation writing opposes. 'Humans and other animals' preserves the meaning accurately.
+  'people and animals': 'humans and non-human animals'
+  # humans-and-animals: False dichotomy — humans ARE animals. The phrasing reproduces the speciesist framing animal-liberation writing opposes. 'Humans and other animals' preserves the meaning accurately.
+  'animals and people': 'humans and non-human animals'
+  # humans-and-animals: False dichotomy — humans ARE animals. The phrasing reproduces the speciesist framing animal-liberation writing opposes. 'Humans and other animals' preserves the meaning accurately.
+  'man and beast': 'humans and non-human animals'
