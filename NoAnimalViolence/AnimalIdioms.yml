@@ -57,7 +57,7 @@ swap:
   # monkey-see-monkey-do: Frames monkeys (and by extension people of color) as mindless copycats. 'Mindlessly imitate' conveys the meaning without the dehumanizing comparison.
   'monkey see monkey do': 'mindlessly imitate'
   # get-one%27s-goat: Frames goats as easily upset/triggerable. 'Annoy' or 'upset' work without the goat comparison.
-  'get someone\'s goat': 'annoy or upset them'
+  'get someone''s goat': 'annoy or upset them'
   # get-one%27s-goat: Frames goats as easily upset/triggerable. 'Annoy' or 'upset' work without the goat comparison.
   'got my goat': 'annoyed or upset me'
   # goat-rodeo: Frames goats as chaotic/out of control. 'Chaos' or 'mess' work without the goat comparison.
@@ -85,7 +85,7 @@ swap:
   # cat-got-your-tongue: Frames cats as taking away speech. 'Speechless' or 'quiet' work without the cat comparison.
   'cat got your tongue?': 'why are you silent?'
   # cat-got-your-tongue: Frames cats as taking away speech. 'Speechless' or 'quiet' work without the cat comparison.
-  'cat\'s got your tongue': 'you\'re silent or speechless'
+  'cat''s got your tongue': 'you''re silent or speechless'
   # copy-cat: Frames cats as mindless copiers. 'Copycat' or 'imitator' work without the comparison.
   'copy-cat': 'copycat or imitator'
   # copy-cat: Frames cats as mindless copiers. 'Copycat' or 'imitator' work without the comparison.
@@ -143,7 +143,7 @@ swap:
   # fish-out-of-water: Frames fish as out of place. 'Out of place' or 'uncomfortable' work without invoking fish.
   'fish out of water': 'out of place or uncomfortable'
   # fish-out-of-water: Frames fish as out of place. 'Out of place' or 'uncomfortable' work without invoking fish.
-  'like a fish out of water': 'like you\'re out of place or uncomfortable'
+  'like a fish out of water': 'like you''re out of place or uncomfortable'
   # fish-out-of-water: Frames fish as out of place. 'Out of place' or 'uncomfortable' work without invoking fish.
   'fishes out of water': 'out of place or uncomfortable'
   # fishery: Frames fish as products. 'Fishing industry' or 'aquatic farming' work without the dehumanizing comparison.
@@ -184,21 +184,16 @@ swap:
   'horse sense': 'common sense or practical wisdom'
   # horse-sense: Frames horses as practical/wise. 'Common sense' works without the horse comparison.
   'horse-sensible': 'practical or wise'
-  # seahorse: Frames seahorses as horses. 'Seahorse' is fine as it's the actual name of the animal, not a comparison.
-  # Commenting this out as it's not a problematic idiom but rather the actual name of a species
-  # 'seahorse': 'sea creature'
   # pony-up: Frames ponies as payment/obligation. 'Pay up' or 'contribute' work without the pony comparison.
   'pony up': 'pay up or contribute'
   # pony-up: Frames ponies as payment/obligation. 'Pay up' or 'contribute' work without the pony comparison.
   'ponied up': 'paid up or contributed'
   # pony-up: Frames ponies as payment/obligation. 'Pay up' or 'contribute' work without the pony comparison.
   'ponying up': 'paying up or contributing'
-  # pony-express: Not a derogatory idiom. Commenting out.
-  # 'pony express': 'fast delivery'
   # straight-from-the-horse%27s-mouth: Frames horses as sources of truth. 'Straight from the source' works without the horse comparison.
-  'straight from the horse\'s mouth': 'straight from the source'
+  'straight from the horse''s mouth': 'straight from the source'
   # straight-from-the-horse%27s-mouth: Frames horses as sources of truth. 'Straight from the source' works without the horse comparison.
-  'from the horse\'s mouth': 'from the source'
+  'from the horse''s mouth': 'from the source'
   # gift-horse: Frames horses as unwanted gifts. 'Gift' works without the horse comparison.
   'gift horse': 'gift'
   # gift-horse: Frames horses as unwanted gifts. 'Gift' works without the horse comparison.
@@ -285,8 +280,6 @@ swap:
   'sharp as a fox': 'clever or intelligent'
   # sweet-as-honey: Frames honey as sweet (which is fine). But comparing people to honey objectifies them. 'Sweet' or 'kind' work without the honey comparison.
   'sweet as honey': 'very sweet or kind'
-  # tough-as-nails: Frames nails as tough (which is fine, not an animal). This is okay to keep.
-  # 'tough as nails': 'very tough or resilient'
   # tough-as-leather: Frames leather as tough. 'Tough' works without the leather comparison.
   'tough as leather': 'very tough or resilient'
   # tough-as-an-old-boot: Frames old boots as tough. 'Tough' works without the boot comparison.
