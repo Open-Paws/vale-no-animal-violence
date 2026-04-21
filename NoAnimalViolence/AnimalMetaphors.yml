@@ -1,7 +1,6 @@
 # AUTO-GENERATED from project-compassionate-code. Do not edit directly.
 extends: substitution
 message: Consider using '%s' instead of '%s'. This term references animals as objects or tools.
-link: https://doi.org/10.1007/s43681-023-00380-w
 level: warning
 ignorecase: true
 swap:
