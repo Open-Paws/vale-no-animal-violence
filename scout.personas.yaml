@@ -1,0 +1,176 @@
+version: "1"
+interaction: library
+# Vale style package that detects speciesist language in prose and docs, then suggests accurate replacements.
+
+personas:
+  - id: technical-writer-setup
+    name: Technical Writer — Initial Integration
+    description: >
+      A technical writer or doc engineer adding NoAnimalViolence Vale rules to
+      an existing docs project for the first time. They install Vale, drop a
+      .vale.ini into the repo root, run `vale sync` to download the package,
+      then lint their docs directory and README. Their goal is to confirm the
+      package installs correctly and that Vale discovers the style rules before
+      wiring it into CI.
+    environment:
+      runtime: vale@latest
+      os: any
+    flows:
+      - id: install-and-sync
+        name: Install Vale, add config, and sync package
+        steps:
+          - run: >
+              # .vale.ini (repo root) — enable all four rule sets
+              # StylesPath = styles
+              # MinAlertLevel = suggestion
+              # Packages = https://github.com/Open-Paws/vale-no-animal-violence/releases/latest/download/NoAnimalViolence.zip
+              # [*]
+              # BasedOnStyles = NoAnimalViolence
+              vale sync
+          - run: vale --config .vale.ini docs/ README.md
+        expected_outcome: >
+          `vale sync` downloads NoAnimalViolence.zip and unpacks four rule files
+          (AnimalIdioms.yml, AnimalMetaphors.yml, IndustryEuphemisms.yml,
+          TechTerminology.yml) into styles/NoAnimalViolence/. `vale lint` exits
+          0 or prints violations — no "unknown style" errors.
+    assertions:
+      succeeds:
+        - vale sync completes without error and styles/NoAnimalViolence/ is populated
+        - vale --config .vale.ini --version exits 0, confirming Vale can load the config
+      fails_gracefully:
+        - missing .vale.ini produces a clear "no config file found" error, not a silent exit
+        - incorrect Packages URL produces a download error with the URL printed
+      output_contains:
+        - styles/NoAnimalViolence/AnimalIdioms.yml present after sync
+        - styles/NoAnimalViolence/IndustryEuphemisms.yml present after sync
+
+  - id: writer-clean-doc
+    name: Writer — Clean Document (No Violations Expected)
+    description: >
+      A writer who has already cleaned their markdown document of all
+      speciesist idioms, metaphors, industry euphemisms, and problematic tech
+      terminology. They run Vale to confirm the document is clean and that the
+      linter exits successfully with zero violations — suitable as a CI pass
+      gate.
+    environment:
+      runtime: vale@latest
+      os: any
+    flows:
+      - id: lint-clean-doc
+        name: Lint a document that contains no flagged phrases
+        steps:
+          - run: vale --config .vale.ini docs/clean-guide.md
+        expected_outcome: >
+          Vale exits 0 with no output lines (or only a summary showing
+          0 errors, 0 warnings, 0 suggestions). No rule names appear in output.
+    assertions:
+      succeeds:
+        - clean markdown doc containing no speciesist phrases produces zero violations
+        - exit code is 0, suitable for use as a CI pass/fail gate
+        - Vale processes .md, .txt, and .rst files via the [*] glob in .vale.ini
+      fails_gracefully:
+        - non-existent file path produces "file not found" error, not a silent 0 exit
+      output_contains:
+        - "0 errors, 0 warnings, 0 suggestions (or equivalent empty output)"
+
+  - id: writer-flagged-doc
+    name: Writer — Document With Speciesist Phrases (Violations Expected)
+    description: >
+      A writer checking a document known to contain speciesist idioms, animal
+      metaphors, industry euphemisms, and problematic tech terminology. They
+      run Vale to see which phrases are flagged, at which line and column, with
+      what suggested replacement, and under which rule name — so they can make
+      targeted edits.
+    environment:
+      runtime: vale@latest
+      os: any
+    flows:
+      - id: lint-flagged-doc
+        name: Lint a document containing known speciesist phrases
+        steps:
+          - run: vale --config .vale.ini docs/draft-with-issues.md
+        expected_outcome: >
+          Vale prints one violation line per flagged phrase in the format:
+            <file>:<line>:<col>  <level>  Consider using '<replacement>' instead
+            of '<phrase>'.  NoAnimalViolence.<RuleName>
+          Covers at least: AnimalIdioms (e.g. "kill two birds with one stone"),
+          AnimalMetaphors (e.g. "cattle vs. pets"), IndustryEuphemisms (e.g.
+          "processing plant"), and TechTerminology (e.g. "master/slave").
+          Exit code is non-zero.
+      - id: lint-single-rule
+        name: Lint with MinAlertLevel filtering out suggestion-level rules
+        steps:
+          - run: vale --config .vale.ini docs/draft-with-issues.md
+        expected_outcome: >
+          With MinAlertLevel = suggestion in .vale.ini, all four rule sets fire.
+          Raising MinAlertLevel to warning suppresses TechTerminology (level:
+          suggestion) while AnimalIdioms, AnimalMetaphors, and
+          IndustryEuphemisms (level: warning) still appear.
+    assertions:
+      succeeds:
+        - document with "kill two birds with one stone" produces an AnimalIdioms warning
+        - document with "cattle vs. pets" produces an AnimalMetaphors warning with replacement "ephemeral vs. persistent"
+        - document with "processing plant" produces an IndustryEuphemisms warning with replacement "slaughterhouse"
+        - document with "master/slave" produces a TechTerminology suggestion with replacement "primary/replica"
+      fails_gracefully:
+        - document with only suggestion-level violations exits non-zero when MinAlertLevel = suggestion
+        - unrecognised rule name in .vale.ini produces a clear config error, not a silent pass
+      output_contains:
+        - "NoAnimalViolence.AnimalIdioms"
+        - "NoAnimalViolence.AnimalMetaphors"
+        - "NoAnimalViolence.IndustryEuphemisms"
+        - "NoAnimalViolence.TechTerminology"
+        - "Consider using"
+
+  - id: ci-pipeline
+    name: CI Pipeline — Vale on Changed Markdown Files
+    description: >
+      An automated CI pipeline (GitHub Actions, GitLab CI, or pre-commit hook)
+      running Vale against all changed .md, .txt, and .rst files on every pull
+      request. The pipeline must exit non-zero on any violation so that PRs
+      introducing speciesist language are blocked from merging. It uses the
+      errata-ai/vale-action or the pre-commit hook integration described in
+      the README.
+    environment:
+      runtime: vale@latest
+      os: any
+    flows:
+      - id: github-actions-pr-check
+        name: GitHub Actions — lint docs on pull request
+        steps:
+          - run: vale sync
+          - run: vale --config .vale.ini --output=line docs/ README.md
+        expected_outcome: >
+          On a PR that introduces a speciesist phrase, the action posts an
+          inline review comment on the offending line with the rule name and
+          suggested replacement. The workflow step exits non-zero and blocks
+          the merge. On a clean PR the step exits 0.
+      - id: pre-commit-hook
+        name: pre-commit hook — lint staged prose files
+        steps:
+          - run: pre-commit run vale --files docs/draft.md
+        expected_outcome: >
+          The hook runs `vale` against staged .md/.txt/.rst files. If violations
+          are found it prints them and exits non-zero, preventing the commit.
+          If no violations are found it exits 0 silently.
+      - id: gitlab-ci
+        name: GitLab CI merge-request pipeline
+        steps:
+          - run: vale sync
+          - run: vale docs/ README.md
+        expected_outcome: >
+          Pipeline job named "vale" runs on merge_request_event, exits non-zero
+          when violations are present, and exits 0 on a clean doc set.
+    assertions:
+      succeeds:
+        - clean docs directory produces exit code 0 and the CI step passes
+        - vale --output=line produces machine-parseable output one violation per line
+        - vale sync in CI downloads the package without interactive prompts
+      fails_gracefully:
+        - PR introducing "livestock" triggers IndustryEuphemisms warning and blocks merge
+        - PR introducing "guinea pig" triggers AnimalIdioms warning with replacement "test subject"
+        - missing styles/ directory (no prior vale sync) produces a clear error, not a silent pass
+      output_contains:
+        - rule name (e.g. "NoAnimalViolence.IndustryEuphemisms") in violation output
+        - suggested replacement phrase in violation message
+        - file path and line:col coordinates in each violation line
