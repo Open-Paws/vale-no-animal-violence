@@ -51,7 +51,7 @@ zip -r NoAnimalViolence.zip NoAnimalViolence/
 **Strategic role (Lever 1 + Lever 3):** Vale style package for prose/docs linting — the primary speciesist language check for strategy documents, README files, and written documentation across the org. Upstream dependency: `no-animal-violence` (canonical rule dictionary).
 
 **Current org priorities relevant to this repo:**
-- Should be integrated into `open-paws-strategy` repo CI and `open-paws-platform` documentation workflows. See `ecosystem/integration-todos.md` §27a.
+- Should be integrated into `context` repo CI and `open-paws-platform` documentation workflows. See `ecosystem/integration-todos.md` §27a.
 - Bootcamp integration: include Vale + this package in bootcamp writing setup instructions.
 - Suite maintenance has **no named owner** as of 2026-04-02. The `feat/add-industry-euphemisms-rule` branch exists in remote — evaluate and merge if ready.
 - `NoAnimalViolence` is the primary package; `Speciesism` is legacy. New rules go in `NoAnimalViolence` only.
