@@ -13,190 +13,572 @@ swap:
   # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
   'gestation crates': 'pregnancy cage'
   # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
-  'gestation-crate': 'pregnancy cage'
+  'gestation stall': 'pregnancy cage'
   # gestation-crate: Industry euphemism for a metal enclosure so small a pregnant sow cannot turn around for her entire 3.5-month pregnancy. 'Pregnancy cage' is accurate.
-  'gestation-crates': 'pregnancy cage'
-  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
-  'farrowing crate': 'piglet protection cage'
-  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
-  'farrowing crates': 'piglet protection cage'
-  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
-  'farrowing-crate': 'piglet protection cage'
-  # farrowing-crate: Industry euphemism for a metal enclosure where a sow is kept immobilized so she can't crush her piglets. The reality is a sow cannot move at all for weeks. 'Piglet protection cage' is more accurate.
-  'farrowing-crates': 'piglet protection cage'
-  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
-  'battery cage': 'egg production cage'
-  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
-  'battery cages': 'egg production cage'
-  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
-  'battery-cage': 'egg production cage'
-  # battery-cage: Industry euphemism for a cramped metal cage housing multiple laying hens. 'Egg production cage' or 'laying cage' is more accurate.
-  'battery-cages': 'egg production cage'
-  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
-  'forced molting': 'induced molt through starvation'
-  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
-  'forced-molting': 'induced molt through starvation'
-  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
-  'force molting': 'induced molt through starvation'
-  # forced-molting: Industry euphemism for deliberately starving laying hens for 7-14 days to shock their bodies into another productive cycle. 'Starvation cycle' or 'induced molt' is more accurate.
-  'force-molting': 'induced molt through starvation'
-  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
-  'veal crate': 'calf confinement'
-  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
-  'veal crates': 'calf confinement'
-  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
-  'veal-crate': 'calf confinement'
-  # veal-crate: Industry euphemism for a narrow crate where a calf is kept isolated and immobilized to keep his meat pale and tender. 'Calf confinement crate' or 'veal confinement' is more accurate.
-  'veal-crates': 'calf confinement'
-  # humane-slaughter: Industry euphemism suggesting killing animals is 'kind' or 'without suffering.' 'Animal slaughter' or 'killing' is more accurate.
-  'humane slaughter': 'animal slaughter'
-  # humane-slaughter: Industry euphemism suggesting killing animals is 'kind' or 'without suffering.' 'Animal slaughter' or 'killing' is more accurate.
-  'humane-slaughter': 'animal slaughter'
-  # by-products: Industry euphemism for animal body parts not used for primary meat product. 'Animal waste' or 'rendered animal parts' is more accurate.
-  'by-products': 'rendered animal parts'
-  # by-product: Industry euphemism for animal body parts not used for primary meat product. 'Animal waste' or 'rendered animal parts' is more accurate.
-  'by-product': 'rendered animal parts'
-  # culling: Industry euphemism for selectively killing animals deemed economically unviable. 'Killing' or 'selective slaughter' is more accurate.
-  'culling': 'selective slaughter'
-  # culling: Industry euphemism for selectively killing animals deemed economically unviable. 'Killing' or 'selective slaughter' is more accurate.
-  'culled': 'selectively slaughtered'
-  # culling: Industry euphemism for selectively killing animals deemed economically unviable. 'Killing' or 'selective slaughter' is more accurate.
-  'culls': 'selectively slaughtered animals'
-  # depopulation: Industry euphemism for mass killing of animals (often during disease outbreaks). 'Mass slaughter' or 'mass killing' is more accurate.
-  'depopulation': 'mass slaughter'
-  # depopulation: Industry euphemism for mass killing of animals (often during disease outbreaks). 'Mass slaughter' or 'mass killing' is more accurate.
-  'depopulating': 'mass slaughtering'
-  # depopulation: Industry euphemism for mass killing of animals (often during disease outbreaks). 'Mass slaughter' or 'mass killing' is more accurate.
-  'depopulated': 'mass slaughtered'
-  # processing: Industry euphemism for slaughtering animals for meat/products. 'Slaughtering' or 'butchering' is more accurate.
-  'processing': 'slaughtering'
-  # processing: Industry euphemism for slaughtering animals for meat/products. 'Slaughtering' or 'butchering' is more accurate.
-  'processed meat': 'slaughtered animal meat'
-  # processing: Industry euphemism for slaughtering animals for meat/products. 'Slaughtering' or 'butchering' is more accurate.
-  'processed animals': 'slaughtered animals'
-  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
-  'harvesting fish': 'catching fish'
-  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
-  'harvesting seafood': 'catching seafood'
-  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
-  'harvesting': 'catching or killing'
-  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
-  'harvested': 'caught or killed'
-  # harvesting: Industry euphemism for catching/killing wild animals (fish, marine mammals). 'Catching' or 'killing' is more accurate.
-  'harvesting animals': 'killing animals'
-  # putting-down: Industry euphemism for killing animals (pets, livestock). 'Euthanizing' or 'killing' is more accurate.
-  'putting down': 'euthanizing'
-  # putting-down: Industry euphemism for killing animals (pets, livestock). 'Euthanizing' or 'killing' is more accurate.
-  'put down': 'euthanize'
-  # euthanasia: Industry euphemism (when used for agricultural animals). 'Slaughter' or 'killing' is more accurate for farm animals. For companion animals in end-of-life care, this is appropriate.
-  # Commenting this out as it has legitimate uses
-  # 'euthanasia': 'killing'
-  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
-  'confined animal feeding operation': 'factory farm'
-  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
-  'confinement animal feeding operation': 'factory farm'
-  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
-  'animal feeding operation': 'factory farm'
-  # confined-animal-feeding-operation: Industry euphemism suggesting animals are 'fed' when they're in extreme confinement. 'Factory farm' or 'intensive confinement facility' is more accurate.
-  'CAFO': 'factory farm'
-  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
-  'factory farming': 'intensive animal agriculture'
-  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
-  'factory-farming': 'intensive animal agriculture'
-  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
-  'factory-farmed': 'intensively farmed'
-  # factory-farming: Industry euphemism. Better to call it what it is. 'Intensive animal agriculture' or 'industrial farming' is more descriptive.
-  'factory-farm': 'intensive animal farm'
-  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
-  'broiler chicken': 'fast-growth chicken'
-  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
-  'broiler chickens': 'fast-growth chickens'
-  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
-  'broiler': 'fast-growth chicken'
-  # broiler-chicken: Industry term for chickens bred to grow so fast they often cannot walk. 'Fast-growth chicken' or 'meat chicken' is more transparent.
-  'broilers': 'fast-growth chickens'
-  # layer: Industry term for egg-laying hens. 'Egg-laying hen' is more transparent.
-  'layer': 'egg-laying hen'
-  # layer: Industry term for egg-laying hens. 'Egg-laying hen' is more transparent.
-  'layers': 'egg-laying hens'
-  # breeder: Industry term for animals bred for reproduction. 'Breeding animal' is more transparent.
-  'breeder': 'breeding animal'
-  # breeder: Industry term for animals bred for reproduction. 'Breeding animal' is more transparent.
-  'breeders': 'breeding animals'
-  # spent-hen: Industry term for an egg-laying hen past her productive prime, typically killed. 'Exhausted hen' or 'end-of-life hen' is more transparent.
-  'spent hen': 'exhausted hen'
-  # spent-hen: Industry term for an egg-laying hen past her productive prime, typically killed. 'Exhausted hen' or 'end-of-life hen' is more transparent.
-  'spent hens': 'exhausted hens'
-  # beak-trimming: Industry euphemism for cutting off the sensitive beaks of birds to prevent stress-induced pecking in overcrowded conditions. 'Beak cutting' or 'beak amputation' is more accurate.
-  'beak trimming': 'beak cutting'
-  # beak-trimming: Industry euphemism for cutting off the sensitive beaks of birds to prevent stress-induced pecking in overcrowded conditions. 'Beak cutting' or 'beak amputation' is more accurate.
-  'beak-trimming': 'beak cutting'
-  # beak-trimming: Industry euphemism for cutting off the sensitive beaks of birds to prevent stress-induced pecking in overcrowded conditions. 'Beak cutting' or 'beak amputation' is more accurate.
-  'trimmed beaks': 'cut beaks'
-  # tail-docking: Industry euphemism for cutting off the tails of piglets to prevent tail-biting caused by stress in overcrowded conditions. 'Tail cutting' or 'tail amputation' is more accurate.
-  'tail docking': 'tail cutting'
-  # tail-docking: Industry euphemism for cutting off the tails of piglets to prevent tail-biting caused by stress in overcrowded conditions. 'Tail cutting' or 'tail amputation' is more accurate.
-  'tail-docking': 'tail cutting'
-  # tail-docking: Industry euphemism for cutting off the tails of piglets to prevent tail-biting caused by stress in overcrowded conditions. 'Tail cutting' or 'tail amputation' is more accurate.
-  'docked tails': 'cut tails'
-  # dehorning: Industry euphemism for removing the horns/horn buds of cattle (often painfully). 'Horn removal' or 'debudding' is more accurate.
-  'dehorning': 'horn removal'
-  # dehorning: Industry euphemism for removing the horns/horn buds of cattle (often painfully). 'Horn removal' or 'debudding' is more accurate.
-  'dehorned': 'horns removed'
-  # dehorning: Industry euphemism for removing the horns/horn buds of cattle (often painfully). 'Horn removal' or 'debudding' is more accurate.
-  'dehorning cattle': 'removing cattle horns'
-  # castration: When done without anesthesia on farm animals, this is painful harm. 'Surgical castration' or 'neutering without anesthesia' is more transparent.
-  # Commenting this out as castration with anesthesia is appropriate. The issue is lack of anesthesia.
-  # 'castration': 'neutering with anesthesia'
-  # stunning: Industry euphemism for rendering an animal unconscious before slaughter (which doesn't always work). 'Rendering unconscious' or 'pre-slaughter rendering' is more transparent.
-  'stunning': 'rendering unconscious'
-  # stunning: Industry euphemism for rendering an animal unconscious before slaughter (which doesn't always work). 'Rendering unconscious' or 'pre-slaughter rendering' is more transparent.
-  'stunned': 'rendered unconscious'
-  # wet market: Term for markets selling live and dead animals, often with poor conditions. 'Live animal market' or 'animal market' is more transparent (and less stigmatizing to specific cultures).
-  'wet market': 'live animal market'
-  # wet market: Term for markets selling live and dead animals, often with poor conditions. 'Live animal market' or 'animal market' is more transparent (and less stigmatizing to specific cultures).
-  'wet markets': 'live animal markets'
-  # skin-trade: Industry term for fur industry. 'Fur industry' is more transparent and less dehumanizing.
-  'skin trade': 'fur industry'
-  # wildlife-trafficking: Term for illegal trade in wild animals. While not inherently dehumanizing, 'illegal animal trade' is clearer.
-  # Commenting this out as it's more of a technical term than an idiom
-  # 'wildlife trafficking': 'illegal animal trade'
-  # apex-predator: Term often used to justify killing large carnivores. 'Top predator' or 'keystone species' is more scientific and less justificatory.
-  'apex predator': 'top predator'
-  # apex-predator: Term often used to justify killing large carnivores. 'Top predator' or 'keystone species' is more scientific and less justificatory.
-  'apex predators': 'top predators'
-  # game-animal: Industry term for wild animals hunted for sport/food. 'Hunted animal' or 'wild animal' is more transparent.
-  'game animal': 'hunted animal'
-  # game-animal: Industry term for wild animals hunted for sport/food. 'Hunted animal' or 'wild animal' is more transparent.
-  'game animals': 'hunted animals'
-  # vermin: Term used to justify killing animals considered pests. 'Pest species' or 'conflict animal' is more neutral.
-  'vermin': 'pest species'
-  # invasive-species: Term sometimes used to justify eradicating non-native species. 'Non-native species' or 'introduced species' is more neutral.
-  'invasive species': 'introduced species'
-  # invasive-species: Term sometimes used to justify eradicating non-native species. 'Non-native species' or 'introduced species' is more neutral.
-  'invasive species management': 'non-native species management'
-  # wildlife-management: Euphemism for killing wild animals to control populations. 'Population control' or 'lethal control' is more transparent.
-  'wildlife management': 'population control'
-  # wildlife-management: Euphemism for killing wild animals to control populations. 'Population control' or 'lethal control' is more transparent.
-  'wildlife-management': 'population control'
-  # pest-control: Euphemism for killing animals. 'Pest killing' or 'lethal control' is more transparent.
-  'pest control': 'pest killing'
-  # pest-control: Euphemism for killing animals. 'Pest killing' or 'lethal control' is more transparent.
-  'pest-control': 'pest killing'
-  # rodent-control: Euphemism for killing rodents. 'Rodent killing' or 'lethal control' is more transparent.
-  'rodent control': 'rodent killing'
-  # rodent-control: Euphemism for killing rodents. 'Rodent killing' or 'lethal control' is more transparent.
-  'rodent-control': 'rodent killing'
-  # animal-control: Industry term for government agencies that confine, kill, and euthanize animals. 'Animal services' or 'animal shelter' is more transparent.
-  'animal control': 'animal services'
-  # animal-control: Industry term for government agencies that confine, kill, and euthanize animals. 'Animal services' or 'animal shelter' is more transparent.
-  'animal-control': 'animal services'
-  # pound: Term for facilities that confine and often kill stray animals. 'Shelter' or 'animal facility' is more neutral.
-  'pound': 'shelter'
-  # roadkill: Term for animals killed on roadways. While direct, it can be dehumanizing. 'Wildlife hit by vehicles' or 'vehicle-struck animals' is more respectful.
-  'roadkill': 'wildlife hit by vehicles'
-  # roadkill: Term for animals killed on roadways. While direct, it can be dehumanizing. 'Wildlife hit by vehicles' or 'vehicle-struck animals' is more respectful.
-  'roadkills': 'wildlife hit by vehicles'
-  # carrion: While a technical term, it can be disrespectful when referring to animal remains. 'Animal remains' or 'dead animal' is more respectful.
-  # Commenting this out as it's more of a technical term
-  # 'carrion': 'animal remains'
+  'gestation stalls': 'pregnancy cage'
+  # depopulation: Industry euphemism for killing entire flocks or herds at once. 'Mass killing' is the accurate term. (Suppressed in database or population-statistics contexts where the word refers to removing records.)
+  'depopulation': 'mass killing'
+  # depopulation: Industry euphemism for killing entire flocks or herds at once. 'Mass killing' is the accurate term. (Suppressed in database or population-statistics contexts where the word refers to removing records.)
+  'depopulated': 'mass killing'
+  # depopulation: Industry euphemism for killing entire flocks or herds at once. 'Mass killing' is the accurate term. (Suppressed in database or population-statistics contexts where the word refers to removing records.)
+  'depopulating': 'mass killing'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'meat plant': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'meat plants': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'meat packing plant': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'meat-packing plant': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'meatpacking plant': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'packing plant': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'packing plants': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'processing plant': 'slaughterhouse'
+  # processing-plant: Industry euphemisms for slaughterhouse. 'Slaughterhouse' is the accurate term. (Suppressed in clearly non-animal contexts like data or chemical processing.)
+  'processing facility': 'slaughterhouse'
+  # farrowing-crate: Industry euphemism for the metal cage confining a sow during birth and nursing. 'Birthing cage' is accurate.
+  'farrowing crate': 'birthing cage'
+  # farrowing-crate: Industry euphemism for the metal cage confining a sow during birth and nursing. 'Birthing cage' is accurate.
+  'farrowing crates': 'birthing cage'
+  # farrowing-crate: Industry euphemism for the metal cage confining a sow during birth and nursing. 'Birthing cage' is accurate.
+  'farrowing stall': 'birthing cage'
+  # farrowing-crate: Industry euphemism for the metal cage confining a sow during birth and nursing. 'Birthing cage' is accurate.
+  'farrowing stalls': 'birthing cage'
+  # battery-cage: Industry euphemism for wire enclosures that give each hen less floor space than a sheet of paper. 'Small wire cage' describes what it is.
+  'battery cage': 'small wire cage'
+  # battery-cage: Industry euphemism for wire enclosures that give each hen less floor space than a sheet of paper. 'Small wire cage' describes what it is.
+  'battery cages': 'small wire cage'
+  # battery-cage: Industry euphemism for wire enclosures that give each hen less floor space than a sheet of paper. 'Small wire cage' describes what it is.
+  'battery-cage': 'small wire cage'
+  # battery-cage: Industry euphemism for wire enclosures that give each hen less floor space than a sheet of paper. 'Small wire cage' describes what it is.
+  'battery-caged': 'small wire cage'
+  # spent-hen: 'Spent' frames the hen as a depleted resource. Naming what actually happens — she is killed when her egg production falls — is more accurate.
+  'spent hen': 'hen killed after egg production declines'
+  # spent-hen: 'Spent' frames the hen as a depleted resource. Naming what actually happens — she is killed when her egg production falls — is more accurate.
+  'spent hens': 'hen killed after egg production declines'
+  # humane-slaughter: Industry oxymoron — a killing cannot be 'humane' to the one being killed. Drop the modifier and use 'slaughter' or 'killing.'
+  'humane slaughter': 'slaughter'
+  # humane-slaughter: Industry oxymoron — a killing cannot be 'humane' to the one being killed. Drop the modifier and use 'slaughter' or 'killing.'
+  'humanely slaughter': 'slaughter'
+  # humane-slaughter: Industry oxymoron — a killing cannot be 'humane' to the one being killed. Drop the modifier and use 'slaughter' or 'killing.'
+  'humanely slaughtered': 'slaughter'
+  # humane-slaughter: Industry oxymoron — a killing cannot be 'humane' to the one being killed. Drop the modifier and use 'slaughter' or 'killing.'
+  'humane killing': 'slaughter'
+  # humane-slaughter: Industry oxymoron — a killing cannot be 'humane' to the one being killed. Drop the modifier and use 'slaughter' or 'killing.'
+  'humane death': 'slaughter'
+  # broiler-chicken: Industry term that defines a chicken by its commercial purpose. 'Chicken raised for meat' is the human-readable version. (The kitchen appliance is not flagged.)
+  'broiler chicken': 'chicken raised for meat'
+  # broiler-chicken: Industry term that defines a chicken by its commercial purpose. 'Chicken raised for meat' is the human-readable version. (The kitchen appliance is not flagged.)
+  'broiler chickens': 'chicken raised for meat'
+  # broiler-chicken: Industry term that defines a chicken by its commercial purpose. 'Chicken raised for meat' is the human-readable version. (The kitchen appliance is not flagged.)
+  'broiler hen': 'chicken raised for meat'
+  # broiler-chicken: Industry term that defines a chicken by its commercial purpose. 'Chicken raised for meat' is the human-readable version. (The kitchen appliance is not flagged.)
+  'broiler hens': 'chicken raised for meat'
+  # broiler-chicken: Industry term that defines a chicken by its commercial purpose. 'Chicken raised for meat' is the human-readable version. (The kitchen appliance is not flagged.)
+  'broilers': 'chicken raised for meat'
+  # cattle-vs-pets: Infrastructure metaphor that Google's own style guide flags for removal as 'figurative language that relates to the slaughter of animals.' 'Ephemeral vs. persistent' or 'disposable vs. unique' captures the same architectural concept.
+  'cattle not pets': 'ephemeral vs. persistent'
+  # cattle-vs-pets: Infrastructure metaphor that Google's own style guide flags for removal as 'figurative language that relates to the slaughter of animals.' 'Ephemeral vs. persistent' or 'disposable vs. unique' captures the same architectural concept.
+  'cattle vs pets': 'ephemeral vs. persistent'
+  # cattle-vs-pets: Infrastructure metaphor that Google's own style guide flags for removal as 'figurative language that relates to the slaughter of animals.' 'Ephemeral vs. persistent' or 'disposable vs. unique' captures the same architectural concept.
+  'cattle vs. pets': 'ephemeral vs. persistent'
+  # cattle-vs-pets: Infrastructure metaphor that Google's own style guide flags for removal as 'figurative language that relates to the slaughter of animals.' 'Ephemeral vs. persistent' or 'disposable vs. unique' captures the same architectural concept.
+  'cattle versus pets': 'ephemeral vs. persistent'
+  # cattle-vs-pets: Infrastructure metaphor that Google's own style guide flags for removal as 'figurative language that relates to the slaughter of animals.' 'Ephemeral vs. persistent' or 'disposable vs. unique' captures the same architectural concept.
+  'cattle, not pets': 'ephemeral vs. persistent'
+  # cattle-vs-pets: Infrastructure metaphor that Google's own style guide flags for removal as 'figurative language that relates to the slaughter of animals.' 'Ephemeral vs. persistent' or 'disposable vs. unique' captures the same architectural concept.
+  'pets not cattle': 'ephemeral vs. persistent'
+  # cash-cow: Treats a cow as a thing to be extracted from for profit. 'Moneymaker' or 'profit center' carries the same meaning.
+  'cash cow': 'moneymaker'
+  # cash-cow: Treats a cow as a thing to be extracted from for profit. 'Moneymaker' or 'profit center' carries the same meaning.
+  'cash cows': 'moneymaker'
+  # put-out-to-pasture: Refers to the farm practice of disposing of animals once they're no longer productive. 'Retire,' 'phase out,' or 'sunset' is clearer and carries no harm.
+  'put out to pasture': 'retire'
+  # put-out-to-pasture: Refers to the farm practice of disposing of animals once they're no longer productive. 'Retire,' 'phase out,' or 'sunset' is clearer and carries no harm.
+  'putting out to pasture': 'retire'
+  # put-out-to-pasture: Refers to the farm practice of disposing of animals once they're no longer productive. 'Retire,' 'phase out,' or 'sunset' is clearer and carries no harm.
+  'put him out to pasture': 'retire'
+  # put-out-to-pasture: Refers to the farm practice of disposing of animals once they're no longer productive. 'Retire,' 'phase out,' or 'sunset' is clearer and carries no harm.
+  'put her out to pasture': 'retire'
+  # put-out-to-pasture: Refers to the farm practice of disposing of animals once they're no longer productive. 'Retire,' 'phase out,' or 'sunset' is clearer and carries no harm.
+  'put them out to pasture': 'retire'
+  # put-out-to-pasture: Refers to the farm practice of disposing of animals once they're no longer productive. 'Retire,' 'phase out,' or 'sunset' is clearer and carries no harm.
+  'puts out to pasture': 'retire'
+  # veal: 'Veal' softens 'slaughtered-calf flesh' via a Norman-French borrowing. In advocacy or industry-critical writing, 'calf flesh' names what it is. (Suppressed in recipes and cooking contexts.)
+  'veal': 'calf flesh'
+  # veal: 'Veal' softens 'slaughtered-calf flesh' via a Norman-French borrowing. In advocacy or industry-critical writing, 'calf flesh' names what it is. (Suppressed in recipes and cooking contexts.)
+  'veal calf': 'calf flesh'
+  # veal: 'Veal' softens 'slaughtered-calf flesh' via a Norman-French borrowing. In advocacy or industry-critical writing, 'calf flesh' names what it is. (Suppressed in recipes and cooking contexts.)
+  'veal calves': 'calf flesh'
+  # debeaking: Industry euphemism for slicing or burning off hens' beaks, typically without anesthesia. 'Beak amputation' names what actually happens.
+  'debeaking': 'beak amputation'
+  # debeaking: Industry euphemism for slicing or burning off hens' beaks, typically without anesthesia. 'Beak amputation' names what actually happens.
+  'debeaked': 'beak amputation'
+  # debeaking: Industry euphemism for slicing or burning off hens' beaks, typically without anesthesia. 'Beak amputation' names what actually happens.
+  'beak trimming': 'beak amputation'
+  # debeaking: Industry euphemism for slicing or burning off hens' beaks, typically without anesthesia. 'Beak amputation' names what actually happens.
+  'beak trim': 'beak amputation'
+  # debeaking: Industry euphemism for slicing or burning off hens' beaks, typically without anesthesia. 'Beak amputation' names what actually happens.
+  'beak conditioning': 'beak amputation'
+  # dehorning: Industry term for removing cattle horns, typically without anesthesia. 'Horn amputation' is accurate.
+  'dehorning': 'horn amputation'
+  # dehorning: Industry term for removing cattle horns, typically without anesthesia. 'Horn amputation' is accurate.
+  'dehorned': 'horn amputation'
+  # dehorning: Industry term for removing cattle horns, typically without anesthesia. 'Horn amputation' is accurate.
+  'disbudding': 'horn amputation'
+  # dehorning: Industry term for removing cattle horns, typically without anesthesia. 'Horn amputation' is accurate.
+  'disbudded': 'horn amputation'
+  # tail-docking: Amputating pigs', sheep's, or dogs' tails. 'Tail amputation' is the accurate term.
+  'tail docking': 'tail amputation'
+  # tail-docking: Amputating pigs', sheep's, or dogs' tails. 'Tail amputation' is the accurate term.
+  'tail-docking': 'tail amputation'
+  # tail-docking: Amputating pigs', sheep's, or dogs' tails. 'Tail amputation' is the accurate term.
+  'tail docked': 'tail amputation'
+  # tail-docking: Amputating pigs', sheep's, or dogs' tails. 'Tail amputation' is the accurate term.
+  'docked tail': 'tail amputation'
+  # ear-notching: Industry identification practice of cutting notches in animals' ears. 'Ear mutilation' names what it is.
+  'ear notching': 'ear mutilation'
+  # ear-notching: Industry identification practice of cutting notches in animals' ears. 'Ear mutilation' names what it is.
+  'ear-notching': 'ear mutilation'
+  # ear-notching: Industry identification practice of cutting notches in animals' ears. 'Ear mutilation' names what it is.
+  'ear notched': 'ear mutilation'
+  # ventilation-shutdown: Industry term for killing entire flocks by cutting off airflow — the animals die from suffocation and heat. 'Mass killing by suffocation' is the accurate term. (Suppressed in HVAC contexts.)
+  'ventilation shutdown': 'mass killing by suffocation'
+  # ventilation-shutdown: Industry term for killing entire flocks by cutting off airflow — the animals die from suffocation and heat. 'Mass killing by suffocation' is the accurate term. (Suppressed in HVAC contexts.)
+  'VSD+': 'mass killing by suffocation'
+  # ventilation-shutdown: Industry term for killing entire flocks by cutting off airflow — the animals die from suffocation and heat. 'Mass killing by suffocation' is the accurate term. (Suppressed in HVAC contexts.)
+  'VSD plus': 'mass killing by suffocation'
+  # ventilation-shutdown: Industry term for killing entire flocks by cutting off airflow — the animals die from suffocation and heat. 'Mass killing by suffocation' is the accurate term. (Suppressed in HVAC contexts.)
+  'ventilation shutdown plus': 'mass killing by suffocation'
+  # maceration: Industry euphemism for killing day-old male chicks by grinding them alive. Say what the process is. (Bare 'maceration' in culinary or chemistry contexts is not flagged.)
+  'maceration of chicks': 'grinding newborn chicks alive'
+  # maceration: Industry euphemism for killing day-old male chicks by grinding them alive. Say what the process is. (Bare 'maceration' in culinary or chemistry contexts is not flagged.)
+  'chick maceration': 'grinding newborn chicks alive'
+  # maceration: Industry euphemism for killing day-old male chicks by grinding them alive. Say what the process is. (Bare 'maceration' in culinary or chemistry contexts is not flagged.)
+  'macerated chicks': 'grinding newborn chicks alive'
+  # maceration: Industry euphemism for killing day-old male chicks by grinding them alive. Say what the process is. (Bare 'maceration' in culinary or chemistry contexts is not flagged.)
+  'macerating chicks': 'grinding newborn chicks alive'
+  # abattoir: French-derived euphemism for slaughterhouse. 'Slaughterhouse' is the accurate English term.
+  'abattoir': 'slaughterhouse'
+  # abattoir: French-derived euphemism for slaughterhouse. 'Slaughterhouse' is the accurate English term.
+  'abattoirs': 'slaughterhouse'
+  # rendering-plant: Facility that processes animal bodies — roadkill, downed animals, slaughter byproducts — into meal, fat, and tallow. Naming it accurately makes the supply chain visible. (Only the full compound 'rendering plant' / 'rendering facility' is flagged; bare 'rendering' for graphics or UI is not.)
+  'rendering plant': 'animal-body processing plant'
+  # rendering-plant: Facility that processes animal bodies — roadkill, downed animals, slaughter byproducts — into meal, fat, and tallow. Naming it accurately makes the supply chain visible. (Only the full compound 'rendering plant' / 'rendering facility' is flagged; bare 'rendering' for graphics or UI is not.)
+  'rendering plants': 'animal-body processing plant'
+  # rendering-plant: Facility that processes animal bodies — roadkill, downed animals, slaughter byproducts — into meal, fat, and tallow. Naming it accurately makes the supply chain visible. (Only the full compound 'rendering plant' / 'rendering facility' is flagged; bare 'rendering' for graphics or UI is not.)
+  'rendering facility': 'animal-body processing plant'
+  # stockyard: Euphemism for pre-slaughter holding pens. 'Slaughterhouse pens' describes what the facility actually is.
+  'stockyard': 'slaughterhouse pens'
+  # stockyard: Euphemism for pre-slaughter holding pens. 'Slaughterhouse pens' describes what the facility actually is.
+  'stockyards': 'slaughterhouse pens'
+  # laying-hen: Defines a hen by her egg-laying function. When sex and species are relevant, 'hen' is sufficient.
+  'laying hen': 'hen'
+  # laying-hen: Defines a hen by her egg-laying function. When sex and species are relevant, 'hen' is sufficient.
+  'laying hens': 'hen'
+  # laying-hen: Defines a hen by her egg-laying function. When sex and species are relevant, 'hen' is sufficient.
+  'layer hen': 'hen'
+  # laying-hen: Defines a hen by her egg-laying function. When sex and species are relevant, 'hen' is sufficient.
+  'layer hens': 'hen'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'dairy cow': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'dairy cows': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'dairy cattle': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'beef cattle': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'beef cow': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'beef cows': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'meat bird': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'meat birds': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'meat rabbit': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'meat rabbits': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'meat goat': 'cow'
+  # use-category-naming: Defines an animal by the product humans extract from them. The species name alone is sufficient unless the use is actively relevant.
+  'meat goats': 'cow'
+  # brood-sow: Defines a female animal by her reproductive function. Name the individual directly where possible.
+  'brood sow': 'pregnant pig'
+  # brood-sow: Defines a female animal by her reproductive function. Name the individual directly where possible.
+  'brood sows': 'pregnant pig'
+  # brood-sow: Defines a female animal by her reproductive function. Name the individual directly where possible.
+  'breeding stock': 'pregnant pig'
+  # brood-sow: Defines a female animal by her reproductive function. Name the individual directly where possible.
+  'breeding pair': 'pregnant pig'
+  # cattle-call: Likens human applicants to livestock being herded. 'Open call' or 'mass audition' carries the same meaning without the framing.
+  'cattle call': 'open call'
+  # cattle-call: Likens human applicants to livestock being herded. 'Open call' or 'mass audition' carries the same meaning without the framing.
+  'cattle calls': 'open call'
+  # pet-project: Carries over the property framing of 'pet' (something owned) to the project. 'Side project' or 'passion project' captures the same idea without the ownership framing.
+  'pet project': 'side project'
+  # pet-project: Carries over the property framing of 'pet' (something owned) to the project. 'Side project' or 'passion project' captures the same idea without the ownership framing.
+  'pet projects': 'side project'
+  # humanely-raised: USDA-unregulated marketing label — companies define their own standards, and the actual conditions often differ little from factory farming. Describe the actual conditions where possible.
+  'humanely raised': 'factory-farmed'
+  # humanely-raised: USDA-unregulated marketing label — companies define their own standards, and the actual conditions often differ little from factory farming. Describe the actual conditions where possible.
+  'humanely produced': 'factory-farmed'
+  # humanely-raised: USDA-unregulated marketing label — companies define their own standards, and the actual conditions often differ little from factory farming. Describe the actual conditions where possible.
+  'humanely farmed': 'factory-farmed'
+  # free-range: USDA requires only 'access to outdoors' — often a small door to a small porch that most birds never use. The label does not guarantee meaningful outdoor life.
+  'free-range': 'minimally accessible outdoor pen'
+  # free-range: USDA requires only 'access to outdoors' — often a small door to a small porch that most birds never use. The label does not guarantee meaningful outdoor life.
+  'free range': 'minimally accessible outdoor pen'
+  # free-range: USDA requires only 'access to outdoors' — often a small door to a small porch that most birds never use. The label does not guarantee meaningful outdoor life.
+  'free-roaming': 'minimally accessible outdoor pen'
+  # free-range: USDA requires only 'access to outdoors' — often a small door to a small porch that most birds never use. The label does not guarantee meaningful outdoor life.
+  'free roaming': 'minimally accessible outdoor pen'
+  # pasture-raised: Not USDA-regulated; the meaning depends on whichever certifier the producer chooses. Name the certifier and the actual conditions where possible.
+  'pasture-raised': 'raised on pasture (certifier-dependent)'
+  # pasture-raised: Not USDA-regulated; the meaning depends on whichever certifier the producer chooses. Name the certifier and the actual conditions where possible.
+  'pasture raised': 'raised on pasture (certifier-dependent)'
+  # pasture-raised: Not USDA-regulated; the meaning depends on whichever certifier the producer chooses. Name the certifier and the actual conditions where possible.
+  'pastured': 'raised on pasture (certifier-dependent)'
+  # grass-fed: Describes the cattle's feed, not their welfare. Slaughter, transport, and mother-calf separation happen the same way. The USDA dropped its 'grass-fed' definition in 2016; current usage is producer-defined.
+  'grass-fed': 'grass-fed (USDA definition dropped 2016)'
+  # grass-fed: Describes the cattle's feed, not their welfare. Slaughter, transport, and mother-calf separation happen the same way. The USDA dropped its 'grass-fed' definition in 2016; current usage is producer-defined.
+  'grass fed': 'grass-fed (USDA definition dropped 2016)'
+  # grass-fed: Describes the cattle's feed, not their welfare. Slaughter, transport, and mother-calf separation happen the same way. The USDA dropped its 'grass-fed' definition in 2016; current usage is producer-defined.
+  'grass-finished': 'grass-fed (USDA definition dropped 2016)'
+  # grass-fed: Describes the cattle's feed, not their welfare. Slaughter, transport, and mother-calf separation happen the same way. The USDA dropped its 'grass-fed' definition in 2016; current usage is producer-defined.
+  'grass finished': 'grass-fed (USDA definition dropped 2016)'
+  # cage-free-for-meat: Meaningless for meat birds — broiler chickens and turkeys are almost never caged in industrial production. The label implies a welfare improvement that doesn't exist. (Cage-free for eggs IS a meaningful distinction; that usage is not flagged.)
+  'cage-free chicken': 'crowded indoor housing'
+  # cage-free-for-meat: Meaningless for meat birds — broiler chickens and turkeys are almost never caged in industrial production. The label implies a welfare improvement that doesn't exist. (Cage-free for eggs IS a meaningful distinction; that usage is not flagged.)
+  'cage free chicken': 'crowded indoor housing'
+  # cage-free-for-meat: Meaningless for meat birds — broiler chickens and turkeys are almost never caged in industrial production. The label implies a welfare improvement that doesn't exist. (Cage-free for eggs IS a meaningful distinction; that usage is not flagged.)
+  'cage-free turkey': 'crowded indoor housing'
+  # cage-free-for-meat: Meaningless for meat birds — broiler chickens and turkeys are almost never caged in industrial production. The label implies a welfare improvement that doesn't exist. (Cage-free for eggs IS a meaningful distinction; that usage is not flagged.)
+  'cage free turkey': 'crowded indoor housing'
+  # cage-free-for-meat: Meaningless for meat birds — broiler chickens and turkeys are almost never caged in industrial production. The label implies a welfare improvement that doesn't exist. (Cage-free for eggs IS a meaningful distinction; that usage is not flagged.)
+  'cage-free meat': 'crowded indoor housing'
+  # cage-free-for-meat: Meaningless for meat birds — broiler chickens and turkeys are almost never caged in industrial production. The label implies a welfare improvement that doesn't exist. (Cage-free for eggs IS a meaningful distinction; that usage is not flagged.)
+  'cage free meat': 'crowded indoor housing'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'Certified Humane': 'name the certifier and standard'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'Animal Welfare Approved': 'name the certifier and standard'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'Global Animal Partnership': 'name the certifier and standard'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'American Humane Certified': 'name the certifier and standard'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'One Health Certified': 'name the certifier and standard'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'GAP certified': 'name the certifier and standard'
+  # humane-certifications: Third-party welfare certifications with widely varying standards — some are meaningful (Animal Welfare Approved), others are marketing (American Humane Certified). Name the specific standard if relevant.
+  'GAP Step': 'name the certifier and standard'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'ethically sourced meat': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'ethically sourced dairy': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'ethically sourced eggs': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'responsibly sourced meat': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'responsibly sourced dairy': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'happy meat': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'happy cow': 'describe the actual farm practices'
+  # ethically-sourced-animal: Marketing language without a standard definition when applied to animal products. 'Ethically sourced' meat has no USDA definition. Describe the actual practices instead. (The phrase applied to coffee, chocolate, or textiles is not flagged.)
+  'happy cows': 'describe the actual farm practices'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'dolphin-safe': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'dolphin safe': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'line-caught': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'line caught': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'pole-and-line caught': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'pole-caught': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'sustainably caught': 'name the specific fishing method and bycatch statistics'
+  # dolphin-safe: Addresses specific bycatch concerns but not fish suffering. Fish feel pain, suffocate on deck, or are crushed in nets regardless of how the boat avoids catching dolphins or catches fish one at a time.
+  'sustainable seafood': 'name the specific fishing method and bycatch statistics'
+  # foie-gras: French for 'fat liver'; obscures that the product comes from force-feeding ducks or geese until their livers enlarge to ten times normal size. Name the process.
+  'foie gras': 'force-fed duck liver'
+  # foie-gras: French for 'fat liver'; obscures that the product comes from force-feeding ducks or geese until their livers enlarge to ten times normal size. Name the process.
+  'foie-gras': 'force-fed duck liver'
+  # chevon: Marketing-constructed word (coined in the 1920s) to make goat meat palatable to Anglophone consumers. 'Goat flesh' or 'goat meat' is accurate.
+  'chevon': 'goat flesh'
+  # sweetbread: Opaque culinary term for calf or lamb thymus or pancreas. Naming the organ is clearer. (Suppressed in recipe/cooking contexts.)
+  'sweetbread': 'calf thymus'
+  # sweetbread: Opaque culinary term for calf or lamb thymus or pancreas. Naming the organ is clearer. (Suppressed in recipe/cooking contexts.)
+  'sweetbreads': 'calf thymus'
+  # mutton: 'Mutton' obscures the species. 'Sheep flesh' names it. (Suppressed in recipe contexts.)
+  'mutton': 'sheep flesh'
+  # venison: 'Venison' obscures the species. 'Deer flesh' names it. (Suppressed in recipe or hunting-regulation contexts.)
+  'venison': 'deer flesh'
+  # squab: Marketing term for young pigeon raised for slaughter. 'Pigeon flesh' names what it is. (Suppressed in recipe contexts.)
+  'squab': 'pigeon flesh'
+  # squab: Marketing term for young pigeon raised for slaughter. 'Pigeon flesh' names what it is. (Suppressed in recipe contexts.)
+  'squabs': 'pigeon flesh'
+  # spare-ribs: 'Spare' frames body parts as disposable/extra. 'Pig ribs' is accurate. (Suppressed in recipe/BBQ contexts.)
+  'spare ribs': 'pig ribs'
+  # spare-ribs: 'Spare' frames body parts as disposable/extra. 'Pig ribs' is accurate. (Suppressed in recipe/BBQ contexts.)
+  'spareribs': 'pig ribs'
+  # spare-ribs: 'Spare' frames body parts as disposable/extra. 'Pig ribs' is accurate. (Suppressed in recipe/BBQ contexts.)
+  'spare-ribs': 'pig ribs'
+  # leather-product: 'Leather' obscures that the material is the skin of a killed cow (or pig, sheep, etc.). In advocacy or supply-chain writing, naming it is clearer. Suppressed in fashion/product contexts where the industry term is expected.
+  'leather': 'cow skin'
+  # leather-product: 'Leather' obscures that the material is the skin of a killed cow (or pig, sheep, etc.). In advocacy or supply-chain writing, naming it is clearer. Suppressed in fashion/product contexts where the industry term is expected.
+  'genuine leather': 'cow skin'
+  # leather-product: 'Leather' obscures that the material is the skin of a killed cow (or pig, sheep, etc.). In advocacy or supply-chain writing, naming it is clearer. Suppressed in fashion/product contexts where the industry term is expected.
+  'real leather': 'cow skin'
+  # leather-product: 'Leather' obscures that the material is the skin of a killed cow (or pig, sheep, etc.). In advocacy or supply-chain writing, naming it is clearer. Suppressed in fashion/product contexts where the industry term is expected.
+  'top-grain leather': 'cow skin'
+  # leather-product: 'Leather' obscures that the material is the skin of a killed cow (or pig, sheep, etc.). In advocacy or supply-chain writing, naming it is clearer. Suppressed in fashion/product contexts where the industry term is expected.
+  'full-grain leather': 'cow skin'
+  # wool-product: 'Wool' obscures that the fiber is sheep hair, usually from sheep bred for extreme coat yields (mulesing, shearing injury, eventual slaughter). Advocacy writing names it directly. Suppressed in textile/fashion contexts.
+  'wool': 'sheep hair'
+  # wool-product: 'Wool' obscures that the fiber is sheep hair, usually from sheep bred for extreme coat yields (mulesing, shearing injury, eventual slaughter). Advocacy writing names it directly. Suppressed in textile/fashion contexts.
+  'merino wool': 'sheep hair'
+  # wool-product: 'Wool' obscures that the fiber is sheep hair, usually from sheep bred for extreme coat yields (mulesing, shearing injury, eventual slaughter). Advocacy writing names it directly. Suppressed in textile/fashion contexts.
+  'lambswool': 'sheep hair'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'down feathers': 'plant-based insulation'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'goose down': 'plant-based insulation'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'duck down': 'plant-based insulation'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'down jacket': 'plant-based insulation'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'down comforter': 'plant-based insulation'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'down pillow': 'plant-based insulation'
+  # down-feathers: Down is plucked from ducks and geese, often while alive and distressed. 'Plant-based insulation' or 'synthetic fill' describes the alternative. Bare 'down' (direction) is NOT flagged — only product compounds.
+  'down filling': 'plant-based insulation'
+  # cashmere-mohair-angora: Luxury-marketing names that obscure the animal source. Cashmere and mohair come from goats; angora comes from rabbits (who are often plucked live and injured). Naming the species is clearer in advocacy writing.
+  'cashmere': 'goat hair'
+  # cashmere-mohair-angora: Luxury-marketing names that obscure the animal source. Cashmere and mohair come from goats; angora comes from rabbits (who are often plucked live and injured). Naming the species is clearer in advocacy writing.
+  'mohair': 'goat hair'
+  # cashmere-mohair-angora: Luxury-marketing names that obscure the animal source. Cashmere and mohair come from goats; angora comes from rabbits (who are often plucked live and injured). Naming the species is clearer in advocacy writing.
+  'angora': 'goat hair'
+  # silk-product: Silk production typically requires boiling silkworms alive inside their cocoons to prevent the thread from breaking. Peace silk, plant silk, and synthetics avoid this. Suppressed in textile/fashion contexts.
+  'silk': 'plant silk'
+  # silk-product: Silk production typically requires boiling silkworms alive inside their cocoons to prevent the thread from breaking. Peace silk, plant silk, and synthetics avoid this. Suppressed in textile/fashion contexts.
+  'pure silk': 'plant silk'
+  # silk-product: Silk production typically requires boiling silkworms alive inside their cocoons to prevent the thread from breaking. Peace silk, plant silk, and synthetics avoid this. Suppressed in textile/fashion contexts.
+  'mulberry silk': 'plant silk'
+  # silk-product: Silk production typically requires boiling silkworms alive inside their cocoons to prevent the thread from breaking. Peace silk, plant silk, and synthetics avoid this. Suppressed in textile/fashion contexts.
+  'raw silk': 'plant silk'
+  # royal-jelly-beeswax: Bee products are extracted through industrial beekeeping, which involves queen-clipping, smoke stressing, and often the destruction of hives. Plant-based waxes (candelilla, carnauba, soy) serve most of the same purposes.
+  'royal jelly': 'plant alternative'
+  # royal-jelly-beeswax: Bee products are extracted through industrial beekeeping, which involves queen-clipping, smoke stressing, and often the destruction of hives. Plant-based waxes (candelilla, carnauba, soy) serve most of the same purposes.
+  'beeswax': 'plant alternative'
+  # royal-jelly-beeswax: Bee products are extracted through industrial beekeeping, which involves queen-clipping, smoke stressing, and often the destruction of hives. Plant-based waxes (candelilla, carnauba, soy) serve most of the same purposes.
+  'propolis': 'plant alternative'
+  # downed-animal: 'Downed' uses passive voice to elide why the animal is on the ground — untreated injury or illness in transport or on the farm. 'Too sick to walk' names the condition.
+  'downed animal': 'animal too sick or injured to walk'
+  # downed-animal: 'Downed' uses passive voice to elide why the animal is on the ground — untreated injury or illness in transport or on the farm. 'Too sick to walk' names the condition.
+  'downed animals': 'animal too sick or injured to walk'
+  # downed-animal: 'Downed' uses passive voice to elide why the animal is on the ground — untreated injury or illness in transport or on the farm. 'Too sick to walk' names the condition.
+  'downed cow': 'animal too sick or injured to walk'
+  # downed-animal: 'Downed' uses passive voice to elide why the animal is on the ground — untreated injury or illness in transport or on the farm. 'Too sick to walk' names the condition.
+  'downed cows': 'animal too sick or injured to walk'
+  # downed-animal: 'Downed' uses passive voice to elide why the animal is on the ground — untreated injury or illness in transport or on the farm. 'Too sick to walk' names the condition.
+  'downer animal': 'animal too sick or injured to walk'
+  # downed-animal: 'Downed' uses passive voice to elide why the animal is on the ground — untreated injury or illness in transport or on the farm. 'Too sick to walk' names the condition.
+  'downer cow': 'animal too sick or injured to walk'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'artificial insemination': 'forced impregnation'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'forced insemination': 'forced impregnation'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'AI in cattle': 'forced impregnation'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'AI in cows': 'forced impregnation'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'AI in dairy': 'forced impregnation'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'AI in pigs': 'forced impregnation'
+  # forced-insemination: Industry-standard procedure involving restraint and reproductive invasion. 'Forced impregnation' is the accurate term when the animal cannot consent. (The bare abbreviation 'AI' is not flagged — too much overlap with artificial intelligence. The rule fires only on the specific animal-ag compounds.)
+  'AI in sheep': 'forced impregnation'
+  # farrowing-as-process: Industry verb that erases the individual animal giving birth. 'Giving birth' is the plain-language version. (The compound 'farrowing crate' is flagged by its own rule.)
+  'farrowing': 'giving birth (for pigs)'
+  # farrowing-as-process: Industry verb that erases the individual animal giving birth. 'Giving birth' is the plain-language version. (The compound 'farrowing crate' is flagged by its own rule.)
+  'farrowed': 'giving birth (for pigs)'
+  # live-export: Industry term for loading animals onto ships or trucks for days-to-weeks journeys to overseas slaughter. 'Transport to slaughter' names the destination.
+  'live export': 'transport to slaughter'
+  # live-export: Industry term for loading animals onto ships or trucks for days-to-weeks journeys to overseas slaughter. 'Transport to slaughter' names the destination.
+  'live exports': 'transport to slaughter'
+  # live-export: Industry term for loading animals onto ships or trucks for days-to-weeks journeys to overseas slaughter. 'Transport to slaughter' names the destination.
+  'live exporting': 'transport to slaughter'
+  # live-export: Industry term for loading animals onto ships or trucks for days-to-weeks journeys to overseas slaughter. 'Transport to slaughter' names the destination.
+  'live transport': 'transport to slaughter'
+  # live-export: Industry term for loading animals onto ships or trucks for days-to-weeks journeys to overseas slaughter. 'Transport to slaughter' names the destination.
+  'live shipment': 'transport to slaughter'
+  # meat-industry-self-naming: Each term names the product rather than the species it comes from. Naming the species (e.g. 'pig-flesh industry') makes the supply chain visible. Low priority — use in advocacy writing, not general documentation.
+  'pork industry': 'pig-flesh industry'
+  # meat-industry-self-naming: Each term names the product rather than the species it comes from. Naming the species (e.g. 'pig-flesh industry') makes the supply chain visible. Low priority — use in advocacy writing, not general documentation.
+  'beef industry': 'pig-flesh industry'
+  # meat-industry-self-naming: Each term names the product rather than the species it comes from. Naming the species (e.g. 'pig-flesh industry') makes the supply chain visible. Low priority — use in advocacy writing, not general documentation.
+  'dairy industry': 'pig-flesh industry'
+  # meat-industry-self-naming: Each term names the product rather than the species it comes from. Naming the species (e.g. 'pig-flesh industry') makes the supply chain visible. Low priority — use in advocacy writing, not general documentation.
+  'poultry industry': 'pig-flesh industry'
+  # meat-industry-self-naming: Each term names the product rather than the species it comes from. Naming the species (e.g. 'pig-flesh industry') makes the supply chain visible. Low priority — use in advocacy writing, not general documentation.
+  'veal industry': 'pig-flesh industry'
+  # meat-industry-self-naming: Each term names the product rather than the species it comes from. Naming the species (e.g. 'pig-flesh industry') makes the supply chain visible. Low priority — use in advocacy writing, not general documentation.
+  'egg industry': 'pig-flesh industry'
+  # trophy-hunting: Frames a killed animal as an achievement to be displayed. 'Killing for display' or 'recreational killing' names the activity.
+  'trophy hunting': 'killing for display'
+  # trophy-hunting: Frames a killed animal as an achievement to be displayed. 'Killing for display' or 'recreational killing' names the activity.
+  'trophy hunter': 'killing for display'
+  # trophy-hunting: Frames a killed animal as an achievement to be displayed. 'Killing for display' or 'recreational killing' names the activity.
+  'trophy hunters': 'killing for display'
+  # trophy-hunting: Frames a killed animal as an achievement to be displayed. 'Killing for display' or 'recreational killing' names the activity.
+  'trophy hunt': 'killing for display'
+  # trophy-hunting: Frames a killed animal as an achievement to be displayed. 'Killing for display' or 'recreational killing' names the activity.
+  'trophy kill': 'killing for display'
+  # trophy-hunting: Frames a killed animal as an achievement to be displayed. 'Killing for display' or 'recreational killing' names the activity.
+  'trophy kills': 'killing for display'
+  # big-game-hunter: 'Big game' frames large wild animals as sport objects existing for human recreation. 'Large-animal hunter' names it; better still, name the species (elephant, lion, rhino).
+  'big-game hunter': 'large-animal hunter'
+  # big-game-hunter: 'Big game' frames large wild animals as sport objects existing for human recreation. 'Large-animal hunter' names it; better still, name the species (elephant, lion, rhino).
+  'big game hunter': 'large-animal hunter'
+  # big-game-hunter: 'Big game' frames large wild animals as sport objects existing for human recreation. 'Large-animal hunter' names it; better still, name the species (elephant, lion, rhino).
+  'big-game hunting': 'large-animal hunter'
+  # big-game-hunter: 'Big game' frames large wild animals as sport objects existing for human recreation. 'Large-animal hunter' names it; better still, name the species (elephant, lion, rhino).
+  'big game hunting': 'large-animal hunter'
+  # sport-fishing: 'Sport' frames killing fish as leisure. In contexts critical of the activity, 'recreational killing of fish' is accurate. (In neutral angling-industry writing, the scanner adds noise; tune the context or disable in those files.)
+  'sport fishing': 'recreational fishing (if literal)'
+  # sport-fishing: 'Sport' frames killing fish as leisure. In contexts critical of the activity, 'recreational killing of fish' is accurate. (In neutral angling-industry writing, the scanner adds noise; tune the context or disable in those files.)
+  'sportfishing': 'recreational fishing (if literal)'
+  # sport-fishing: 'Sport' frames killing fish as leisure. In contexts critical of the activity, 'recreational killing of fish' is accurate. (In neutral angling-industry writing, the scanner adds noise; tune the context or disable in those files.)
+  'recreational fishing': 'recreational fishing (if literal)'
+  # sport-fishing: 'Sport' frames killing fish as leisure. In contexts critical of the activity, 'recreational killing of fish' is accurate. (In neutral angling-industry writing, the scanner adds noise; tune the context or disable in those files.)
+  'game fishing': 'recreational fishing (if literal)'
+  # catch-and-release: Frames hook injury, exhaustion, and stress as harmless. Studies show significant post-release mortality, especially for species caught from deep water. 'Capture and release' is more neutral.
+  'catch and release': 'capture and release'
+  # catch-and-release: Frames hook injury, exhaustion, and stress as harmless. Studies show significant post-release mortality, especially for species caught from deep water. 'Capture and release' is more neutral.
+  'catch-and-release': 'capture and release'
+  # humane-trap-removal: 'Humane' sanitizes the practice. Say whether it's lethal or non-lethal directly — 'non-lethal trap' is clearer and testable.
+  'humane trap': 'non-lethal trap'
+  # humane-trap-removal: 'Humane' sanitizes the practice. Say whether it's lethal or non-lethal directly — 'non-lethal trap' is clearer and testable.
+  'humane traps': 'non-lethal trap'
+  # humane-trap-removal: 'Humane' sanitizes the practice. Say whether it's lethal or non-lethal directly — 'non-lethal trap' is clearer and testable.
+  'humane removal': 'non-lethal trap'
+  # humane-trap-removal: 'Humane' sanitizes the practice. Say whether it's lethal or non-lethal directly — 'non-lethal trap' is clearer and testable.
+  'humane control': 'non-lethal trap'
+  # lethal-control: Bureaucratic language for killing programs. 'Killing program' says it plainly.
+  'lethal removal': 'killing program'
+  # lethal-control: Bureaucratic language for killing programs. 'Killing program' says it plainly.
+  'lethal control': 'killing program'
+  # lethal-control: Bureaucratic language for killing programs. 'Killing program' says it plainly.
+  'lethal management': 'killing program'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'fur farm': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'fur farms': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'fur ranch': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'fur ranches': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'mink farm': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'mink farms': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'mink ranch': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'mink ranches': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'fox farm': 'mink confinement facility'
+  # fur-facility: 'Farm' or 'ranch' evokes pastoral imagery; these are intensive confinement facilities where animals live in wire cages before being gassed or electrocuted. Name them directly.
+  'fox farms': 'mink confinement facility'
+  # fur-bearing-animal: Defines wild animals by a human use. Naming the species (foxes, minks, coyotes, bobcats, chinchillas) is clearer.
+  'fur-bearing animal': 'named species'
+  # fur-bearing-animal: Defines wild animals by a human use. Naming the species (foxes, minks, coyotes, bobcats, chinchillas) is clearer.
+  'fur bearing animal': 'named species'
+  # fur-bearing-animal: Defines wild animals by a human use. Naming the species (foxes, minks, coyotes, bobcats, chinchillas) is clearer.
+  'fur-bearing animals': 'named species'
+  # fur-bearing-animal: Defines wild animals by a human use. Naming the species (foxes, minks, coyotes, bobcats, chinchillas) is clearer.
+  'fur bearing animals': 'named species'
+  # bycatch: Neutralizes the massive incidental killing of non-target marine species — hundreds of thousands of dolphins, sea turtles, seabirds, and sharks each year. 'Incidental killing' names it.
+  'bycatch': 'incidental killing'
+  # bycatch: Neutralizes the massive incidental killing of non-target marine species — hundreds of thousands of dolphins, sea turtles, seabirds, and sharks each year. 'Incidental killing' names it.
+  'by-catch': 'incidental killing'
+  # bycatch: Neutralizes the massive incidental killing of non-target marine species — hundreds of thousands of dolphins, sea turtles, seabirds, and sharks each year. 'Incidental killing' names it.
+  'by catch': 'incidental killing'
+  # fish-stocks: Commodity framing of marine life as a renewable resource. 'Fish populations' is neutral and accurate.
+  'fish stocks': 'fish populations'
+  # fish-stocks: Commodity framing of marine life as a renewable resource. 'Fish populations' is neutral and accurate.
+  'fishery stocks': 'fish populations'
+  # fish-stocks: Commodity framing of marine life as a renewable resource. 'Fish populations' is neutral and accurate.
+  'fish stock': 'fish populations'
+  # aquaculture: Neutral-sounding framing for intensive fish confinement and slaughter. In advocacy writing, 'industrial fish farming' is more accurate.
+  'aquaculture': 'industrial fish farming'
+  # aquaculture: Neutral-sounding framing for intensive fish confinement and slaughter. In advocacy writing, 'industrial fish farming' is more accurate.
+  'fish farming': 'industrial fish farming'
+  # pet-owner: Property framing — 'owner' treats sentient beings as possessions. 'Guardian' preserves the legal and caregiving relationship without the property connotation. Used in legal reform jurisdictions (e.g. Boulder CO, West Hollywood) since the early 2000s.
+  'pet owner': 'pet guardian'
+  # pet-owner: Property framing — 'owner' treats sentient beings as possessions. 'Guardian' preserves the legal and caregiving relationship without the property connotation. Used in legal reform jurisdictions (e.g. Boulder CO, West Hollywood) since the early 2000s.
+  'pet owners': 'pet guardian'
+  # pet-owner: Property framing — 'owner' treats sentient beings as possessions. 'Guardian' preserves the legal and caregiving relationship without the property connotation. Used in legal reform jurisdictions (e.g. Boulder CO, West Hollywood) since the early 2000s.
+  'dog owner': 'pet guardian'
+  # pet-owner: Property framing — 'owner' treats sentient beings as possessions. 'Guardian' preserves the legal and caregiving relationship without the property connotation. Used in legal reform jurisdictions (e.g. Boulder CO, West Hollywood) since the early 2000s.
+  'dog owners': 'pet guardian'
+  # pet-owner: Property framing — 'owner' treats sentient beings as possessions. 'Guardian' preserves the legal and caregiving relationship without the property connotation. Used in legal reform jurisdictions (e.g. Boulder CO, West Hollywood) since the early 2000s.
+  'cat owner': 'pet guardian'
+  # pet-owner: Property framing — 'owner' treats sentient beings as possessions. 'Guardian' preserves the legal and caregiving relationship without the property connotation. Used in legal reform jurisdictions (e.g. Boulder CO, West Hollywood) since the early 2000s.
+  'cat owners': 'pet guardian'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'own a pet': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'owns a pet': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'owning a pet': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'owned a pet': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'own a dog': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'owns a dog': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'own a cat': 'live with a companion animal'
+  # own-a-pet: Property framing applied to companion animals. 'Live with a dog' or 'share a home with a cat' captures the relationship without the ownership frame.
+  'owns a cat': 'live with a companion animal'
+  # aquaculture-harvest: Aquaculture euphemism for killing/slaughtering farmed fish/shrimp. 'Harvest' obscures the mass killing at the end of the grow-out phase.
+  'fish harvest': 'fish slaughter'
+  # aquaculture-harvest: Aquaculture euphemism for killing/slaughtering farmed fish/shrimp. 'Harvest' obscures the mass killing at the end of the grow-out phase.
+  'harvesting fish': 'fish slaughter'
+  # aquaculture-harvest: Aquaculture euphemism for killing/slaughtering farmed fish/shrimp. 'Harvest' obscures the mass killing at the end of the grow-out phase.
+  'shrimp harvest': 'fish slaughter'
+  # aquaculture-harvest: Aquaculture euphemism for killing/slaughtering farmed fish/shrimp. 'Harvest' obscures the mass killing at the end of the grow-out phase.
+  'harvesting shrimp': 'fish slaughter'
+  # aquaculture-harvest: Aquaculture euphemism for killing/slaughtering farmed fish/shrimp. 'Harvest' obscures the mass killing at the end of the grow-out phase.
+  'salmon harvest': 'fish slaughter'
+  # aquaculture-harvest: Aquaculture euphemism for killing/slaughtering farmed fish/shrimp. 'Harvest' obscures the mass killing at the end of the grow-out phase.
+  'tilapia harvest': 'fish slaughter'
+  # stocking-density: Industry term for extreme overcrowding in aquaculture tanks/ponds/net pens, where fish are packed at densities causing stress, disease, and cannibalism.
+  'stocking density': 'crowding density'
+  # stocking-density: Industry term for extreme overcrowding in aquaculture tanks/ponds/net pens, where fish are packed at densities causing stress, disease, and cannibalism.
+  'stocking densities': 'crowding density'
+  # harvest-size: Euphemism for the size/weight at which farmed fish/shrimp are killed ('harvested').
+  'harvest size': 'slaughter size'
+  # harvest-size: Euphemism for the size/weight at which farmed fish/shrimp are killed ('harvested').
+  'market size': 'slaughter size'
+  # harvest-size: Euphemism for the size/weight at which farmed fish/shrimp are killed ('harvested').
+  'slaughter weight': 'slaughter size'
+  # grow-out-phase: Final fattening phase before slaughter in aquaculture.
+  'grow-out pond': 'fattening pond'
+  # grow-out-phase: Final fattening phase before slaughter in aquaculture.
+  'grow-out tank': 'fattening pond'
+  # grow-out-phase: Final fattening phase before slaughter in aquaculture.
+  'grow-out phase': 'fattening pond'
