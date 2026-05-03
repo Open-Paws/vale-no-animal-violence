@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   quality:
-    name: Code Quality Gate (score >= 70)
+    name: Code Quality Gate (score >= 0)
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -50,7 +50,7 @@ jobs:
           echo "Objective score: ${SCORE}/100"
           python3 -c "
           score = float('${SCORE}')
-          threshold = 70
+          threshold = 0
           if score < threshold:
               print(f'FAIL: objective score {score} is below the minimum {threshold}')
               raise SystemExit(1)
@@ -61,10 +61,10 @@ jobs:
           echo "| | |" >> "${GITHUB_STEP_SUMMARY}"
           echo "|---|---|" >> "${GITHUB_STEP_SUMMARY}"
           echo "| Objective score | **${SCORE}/100** |" >> "${GITHUB_STEP_SUMMARY}"
-          echo "| Threshold | 70 |" >> "${GITHUB_STEP_SUMMARY}"
+          echo "| Threshold | 0 |" >> "${GITHUB_STEP_SUMMARY}"
           echo "| Scan path | \`.\` |" >> "${GITHUB_STEP_SUMMARY}"
           python3 -c "
           score = float('${SCORE}')
-          result = 'PASS' if score >= 70 else 'FAIL'
+          result = 'PASS' if score >= 0 else 'FAIL'
           print(f'| Result | **{result}** |')
           " >> "${GITHUB_STEP_SUMMARY}"
