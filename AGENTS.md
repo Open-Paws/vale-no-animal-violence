@@ -114,7 +114,7 @@ Running `vale sync` downloads and unpacks the ZIP into the consumer's `StylesPat
 | [no-animal-violence-action](https://github.com/Open-Paws/no-animal-violence-action) | GitHub Action used in this repo's own CI to check PR content. |
 | [no-animal-violence-pre-commit](https://github.com/Open-Paws/no-animal-violence-pre-commit) | Pre-commit hook used in this repo's `.pre-commit-config.yaml`. |
 | mcp-server-nav-language | Runtime MCP server (live 2026-04-09) covering the same pattern space for real-time agent enforcement. This Vale package handles write-time prose linting; the MCP server handles runtime enforcement. |
-| open-paws-strategy (planned) | Per CLAUDE.md §27a, this package should be integrated into the strategy repo's CI for document linting. |
+| context (planned) | Per CLAUDE.md §27a, this package should be integrated into the strategy repo's CI for document linting. |
 | open-paws-platform (planned) | Documentation workflow integration is a pending TODO. |
 
 ---
@@ -143,7 +143,7 @@ Running `vale sync` downloads and unpacks the ZIP into the consumer's `StylesPat
 ## TODOs (from CLAUDE.md, as of 2026-04-11)
 
 - Evaluate and potentially merge the `feat/add-industry-euphemisms-rule` remote branch.
-- Integrate into `open-paws-strategy` repo CI for document linting (issue §27a).
+- Integrate into `context` repo CI for document linting (issue §27a).
 - Integrate into `open-paws-platform` documentation workflows.
 - Add bootcamp setup instructions referencing this package.
 - Establish a named owner/maintainer for the suite.
